@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Каталог</title>
   </head>
 
@@ -12,48 +13,45 @@
     <header class="page-header">
       <h1 class="visiually-hidden">Магазин "Девайс"</h1>
       <a href="index.html">
-        <img src="#" alt="Логотип Магазина Девайс" class="logo logo-header">
+        <img class="logo logo-header" src="#" alt="Логотип Магазина Девайс" >
       </a>
-      <form action=""https://echo.htmlacademy.ru/courses" method="post"">
+      <form action="https://echo.htmlacademy.ru/courses" method="get">
         <label for="search"></label>
         <input type="text" placeholder="Поиск по сайту" id="search">
       <button type="submit" value="Найти">Найти</button>
       </form>
 
-      <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Войти</a>
+            <a class="navigation-link" href="#" >Войти</a>
           </li>
 
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Сравнить</a>
+            <a class="navigation-link" href="#" >Сравнить</a>
           </li>
 
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Корзина</a>
+            <a class="navigation-link" href="#" >Корзина</a>
           </li>
         </ul>
 
-        <p>
+        <nav class="navigation">
           <a href="#">Каталог товаров</a>
-        </p>
-        <button value="button">Кнопка</button>
-        <ul>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">Доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">Гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">Контакты</a>
-        </ul>
-      </nav>
+          <button class="dropdown" type="button">Кнопка</button>
+          <ul>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Контакты</a>
+          </ul>
+        </nav>
     </header>
 
     <main class="main-inner">
-      <header class="header-inner">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
@@ -69,7 +67,7 @@
           <h2 class="filter">Фильтр</h2>
           <h3 class="catalog-filter-title">Стоимость</h3>
           0<input type="range" min="0" max="10000" step="100">10000
-          <form action="" class="catalog-filter" method="get">
+          <form class="catalog-filter" action=""  method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Цвет</legend>
               <ul class="catolog-filter-list">
@@ -118,17 +116,17 @@
             </fieldset>
           </form>
 
-          <button type="button">Показать</button>
+          <button class="link" type="button" >Показать</button>
         </section>
 
         <section class="select-control">
           <h2 class="filter">Сортировка</h2>
-          <option value="">Популярные</option>
+          <option>Популярные</option>
         </section>
-        <a href="#" class="button button-up">
+        <a class="button button-up" href="#" >
           <span class="visually-hidden">Вверх</span>
         </a>
-        <a href="#" class="button button-down">
+        <a class="button button-down" href="#">
           <span class="visually-hidden">Вниз</span>
         </a>
         <ul>
@@ -147,14 +145,14 @@
             <b class="product-card-price">1500 P</b>
           </li>
           <li class="product-card">
-            <a href="#" class="product-card-link">
+            <a class="product-card-link"href="#" >
               <img src="product-card-image" alt="Непотопляемая селфи-палка">
               <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
             </a>
             <b class="product-card-price">2500 P</b>
           </li>
           <li class="product-card">
-            <a href="#" class="product-card-link">
+            <a class="product-card-link" href="#" >
               <img src="product-card-image" alt="Селфи-палка «Следуй за мной»">
               <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
             </a>
@@ -166,50 +164,45 @@
         </div>
         <ul class="pagination">
           <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-prev pagination-disabled">
+            <a class="pagination-link pagination-prev pagination-disabled" href="#">
               <span class="visually-hidden">Предыдущая страница</span>
             </a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-prev pagination-disabled">
+            <a class="pagination-link pagination-prev pagination-disabled" href="#">
               <span class="visually-hidden">1</span>
             </a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-prev pagination-disabled">
+            <a class="pagination-link pagination-prev pagination-disabled" href="#">
               <span class="visually-hidden">2</span>
             </a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-prev pagination-disabled">
+            <a class="pagination-link pagination-prev pagination-disabled" href="#">
               <span class="visually-hidden">3</span>
             </a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-prev pagination-disabled">
+            <a class="pagination-link pagination-prev pagination-disabled" href="#">
               <span class="visually-hidden">4</span>
             </a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-prev pagination-disabled">
+            <a class="pagination-link pagination-prev pagination-disabled" href="#">
               <span class="visually-hidden">Следующая страница</span>
             </a>
           </li>
         </ul>
-      </header>
     </main>
 
     <footer class="page-footer">
-      <img src="" alt="Магазин Девайс" class="footer-contacts-logo">
-      <section class="footer-contacts">
+      <img class="footer-contacts-logo" src="#" alt="Магазин Девайс" >
         <address class="cotacts-address">
           <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <a href="#" class="contacts-phone">Тел.: +7 (812) 812-12-12</a>
+          <a class="contacts-phone" href="#" >Тел.: +7 (812) 812-12-12</a>
         </address>
 
-      </section>
-
-      <section class="">
         <ul>
           <li class="navigation-item">
             <a href="#" class="navigation-link">Доставка</a>
@@ -221,18 +214,15 @@
             <a href="#" class="navigation-link">Контакты</a>
           </li>
         </ul>
-      </section>
-
-      <section class="footer-social">
-        <a href="">
-          <img src="#" alt="Теллеграмм"></a>
-        <a href="">
-          <img src="#" alt="Ютуб"></a>
-        <a href="">
-          <img src="#" alt="Твиттер"></a>
-      </section>
-
+        <a href="https://t.me/htmlacademy">
+          <img src="#" alt="Теллеграмм">
+        </a>
+        <a href="https://www.youtube.com/eserhtmlacademyru">
+          <img src="#" alt="Ютуб">
+        </a>
+        <a href="https://twitter.com/htmlacademy_ru">
+          <img src="#" alt="Твиттер">
+        </a>
     </footer>
   </body>
-
 </html>
