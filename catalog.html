@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Каталог</title>
   </head>
 
@@ -35,8 +34,7 @@
       </ul>
 
       <nav class="navigation">
-        <a href="#">Каталог товаров</a>
-        <button class="dropdown" type="button">Кнопка</button>
+        <button class="dropdown" type="button">Каталог товаров</button>
         <ul>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
@@ -67,33 +65,33 @@
         <h2 class="filter">Фильтр</h2>
         <h3 class="catalog-filter-title">Стоимость</h3>
         0<input type="range" min="0" max="10000" step="100" />10000
-        <form class="catalog-filter" action="" method="get">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/courses" method="post">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
             <ul class="catolog-filter-list">
               <li class="catolog-filter-item">
-                <label class="control">
-                  <input type="checkbox" name="black" checked />Черный
+                  <label class="control" for="color-black">
+                  <input type="checkbox" name="color" value="black" id="color-black" checked/>Белый
                 </label>
               </li>
               <li class="catolog-filter-item">
-                <label class="control">
-                  <input type="checkbox" name="white" checked />Белый
+                <label class="control" for="color-white">
+                  <input type="checkbox" name="color" value="white" id="color-white" checked/>Белый
                 </label>
               </li>
               <li class="catolog-filter-item">
-                <label class="control">
-                  <input type="checkbox" name="blue" />Синий
+                <label class="control" for="color-blue">
+                  <input type="checkbox" name="color" value="blue" id="color-blue"/>Синий
                 </label>
               </li>
               <li class="catolog-filter-item">
-                <label class="control">
-                  <input type="checkbox" name="red" />Красный
+                <label class="control" for="color-red">
+                  <input type="checkbox" name="color" value="red" id="color-red"/>Красный
                 </label>
               </li>
               <li class="catolog-filter-item">
-                <label class="control">
-                  <input type="checkbox" name="pink" />Розовый
+                <label class="control"  for="color-pink">
+                  <input type="checkbox" name="color" value="pink" id="color-pink"/>Розовый
                 </label>
               </li>
             </ul>
@@ -103,20 +101,21 @@
             <legend class="catalog-filter-title">Bluetooth</legend>
             <ul>
               <li class="catolog-filter-item">
-                <label class="control">
-                  <input type="radio" name="variants" checked />Есть
+                <label class="control" for="yes">
+                  <input type="radio" name="Bluetooth" value="yes" checked id="yes"/>Есть
                 </label>
               </li>
               <li class="catolog-filter-item">
-                <label class="control">
-                  <input type="radio" name="variants" />Нет
+                <label class="control" for="no">
+                  <input type="radio" name="Bluetooth" value="no" id="no"/>Нет
                 </label>
               </li>
             </ul>
           </fieldset>
+          <button class="link" type="submit" value="Показать">Показать</button>
         </form>
 
-        <button class="link" type="button">Показать</button>
+
       </section>
 
       <section class="select-control">
@@ -223,7 +222,7 @@
         <p class="contacts-address-text">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </p>
-        <a class="contacts-phone" href="#">Тел.: +7 (812) 812-12-12</a>
+        <a class="contacts-phone" href="+78128121212">Тел.: +7 (812) 812-12-12</a>
       </address>
 
       <ul>
@@ -237,15 +236,9 @@
           <a href="#" class="navigation-link">Контакты</a>
         </li>
       </ul>
-      <a href="https://t.me/htmlacademy">
-        <img src="#" alt="Теллеграмм" />
-      </a>
-      <a href="https://www.youtube.com/eserhtmlacademyru">
-        <img src="#" alt="Ютуб" />
-      </a>
-      <a href="https://twitter.com/htmlacademy_ru">
-        <img src="#" alt="Твиттер" />
-      </a>
+      <a href="https://t.me/htmlacademy"></a>
+      <a href="https://www.youtube.com/eserhtmlacademyru"></a>
+      <a href="https://twitter.com/htmlacademy_ru"></a>
     </footer>
   </body>
 </html>
