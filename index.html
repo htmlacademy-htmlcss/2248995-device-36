@@ -9,26 +9,15 @@
   <body>
     <header class="page-header">
       <h1 class="visiually-hidden" id="index">Магазин "Девайс"</h1>
-      <img class="logo logo-header" src="images/header/logo.svg" alt="Логотип Магазина Девайс" />
+      <a aria-current="page">
+        <img class="logo logo-header" src="images/header/logo.svg" width="145" height="36" alt="Логотип Магазина Девайс" />
+      </a>
       <form action="https://echo.htmlacademy.ru/courses" method="get">
         <label for="search"></label>
         <input type="text" placeholder="Поиск по сайту" id="search" />
         <button type="submit" value="Найти">Найти</button>
       </form>
 
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Войти</a>
-        </li>
-
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Сравнить</a>
-        </li>
-
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Корзина</a>
-        </li>
-      </ul>
       <nav class="navigation">
         <a href="catalog.html">Каталог товаров</a>
         <button class="dropdown" type="button">Кнопка</button>
@@ -44,6 +33,18 @@
           </li>
         </ul>
       </nav>
+
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Войти</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Сравнить</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Корзина</a>
+        </li>
+      </ul>
     </header>
 
     <main class="main-index">
@@ -53,7 +54,8 @@
       <button type="button">
         <span class="visiually-hidden">Кнопка назад</span>
       </button>
-      <img src="#" alt="Квадрокоптер" />
+      <img src="images/main/png/Квадрокоптер.png" width="560" height="560" alt="Квадрокоптер"/>
+      <img src="images/header/01.svg" width="250" height="135" alt="цифры 01" style="background-color: rgb(222, 237, 18)"/>
       <p>Порхает как бабочка, жалит как пчела!</p>
       <p>
         Этот обычный, на первый взгляд,
@@ -70,25 +72,25 @@
       </dl>
 
       <section class="gadjets">
+        <h2 class="visually-hidden">Гаджеты</h2>
         <ul>
           <li class="navigation-item">
-            <img src="#" alt="Очки для Виртуальной реальности"/> Виртуальная
-            реальность
+            <img src="#" width="" height="" alt="Очки для Виртуальной реальности"/>Виртуальная  реальность
           </li>
           <li class="navigation-item">
-            <img src="" alt="Моноподыдля селфи"/>Моноподы для селфи
+            <img src="" width="" height="" alt="Моноподыдля селфи"/>Моноподы для селфи
           </li>
           <li class="navigation-item">
-            <img src="" alt="Экшн-камеры"/>Экшн-камеры
+            <img src="" width="" height="" alt="Экшн-камеры"/>Экшн-камеры
           </li>
           <li class="navigation-item">
-            <img src="#" alt="Фитнес-браслеты"/>Фитнес-браслеты
+            <img src="#" width="" height="" alt="Фитнес-браслеты"/>Фитнес-браслеты
           </li>
           <li class="navigation-item">
-            <img src="#" alt="Умные часы"/>Умные часы
+            <img src="#"width="" height=""  alt="Умные часы"/>Умные часы
           </li>
           <li class="navigation-item">
-            <img src="#" alt="Квадрокоптер"/>Квадрокоптеры
+            <img src="#" width="" height="" alt="Квадрокоптер"/>Квадрокоптеры
           </li>
         </ul>
       </section>
@@ -131,7 +133,9 @@
           <li class="navigation-item">ТоксБерри</li>
         </ul>
         <a class="link" href="#">Подробнее о нас</a>
+      </section>
 
+      <section>
         <h2 class="subtitle">Контакты</h2>
         <p>
           Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
@@ -164,8 +168,12 @@
     </main>
 
     <footer class="page-footer">
+      <h2 class="visually-hidden"> Свяжитесь с нами</h2>
       <a href="#index">
-        <img class="footer-contacts-logo" src="images/footer/logo-yellowsvg.svg" alt="Магазин Девайс" />
+        <img class="footer-contacts-logo" src="images/footer/logo-yellowsvg.svg" width="145" height="36" alt="Магазин Девайс" />
+      </a>
+      <a href="https://htmlacademy.ru">
+        <img src="images/footer/website.svg" width="114.9" height="32.9" alt="Вебсайт htmlacademy">
       </a>
       <address class="cotacts-address">
         <p class="contacts-address-text">
