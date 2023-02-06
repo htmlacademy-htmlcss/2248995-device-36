@@ -27,6 +27,7 @@ body{
   line-height: 30px;
   color: #000000;
   background-color: #ffffff;
+  width: 1404px;
 }
 
 .navigation-item, .catolog-filter-list,
@@ -86,7 +87,7 @@ body{
 .product-desc{
   font-size: 16px;
 }
-/* стили к гаджетам
+
 .product-01{
   width: 160px;
   height: 160px;
@@ -139,7 +140,14 @@ body{
 }
 
 .product-card-group{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 460px;
+  margin-right: 140px;
+  padding-top: 70px;
   background-color: #ffffff;
+  width: 840px;
+  gap: 40px;
 }
 
 .inner-header-title{
@@ -196,4 +204,18 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+.pagination{
+  display: flex;
+}
+.load{
+  background-color: #ffffff;
+  border: solid 3px #E5E5E5;
+  text-align: center;
+  padding:18px;
+  padding-left:39px;
+  padding-right: 39px;
+}
+.product-group{
+  display: flex;
 }
