@@ -29,8 +29,10 @@ body{
   background-color: #ffffff;
 }
 
-  .navigation-item {
-      list-style: none;
+.navigation-item, .catolog-filter-list,
+.product-card-group, .pagination,
+.breadcrumbs-list{
+  list-style: none;
 }
 
 .page-header{
@@ -73,6 +75,7 @@ body{
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  text-transform: none;
 }
 
 .product-value{
@@ -96,6 +99,7 @@ body{
   font-size: 20px;
   line-height: 23px;
 }
+
 .navigation-item.subject{
   font-weight: 700px;
   font-size: 24px;
@@ -120,10 +124,12 @@ body{
   width: auto;
   height: 321px;
 }
+
 .contacts{
   font-size: 16px;
   line-height: 20px;
 }
+
 .phone{
   color: inherit;
 }
@@ -136,3 +142,58 @@ body{
   background-color: #ffffff;
 }
 
+.inner-header-title{
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: none;
+}
+
+.breadcrumbs-link{
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.filter{
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform:uppercase
+}
+
+.catalog-filter-title{
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.control{
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.product-card-title{
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.product-card-price{
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.pagination-prev{
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
