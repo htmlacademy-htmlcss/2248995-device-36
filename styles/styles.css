@@ -28,6 +28,7 @@ body{
   color: #000000;
   background-color: #ffffff;
   width: 1404px;
+  margin: 0;
 }
 
 .navigation-item, .catolog-filter-list,
@@ -172,7 +173,8 @@ body{
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
-  text-transform:uppercase
+  text-transform:uppercase;
+  letter-spacing: 0.2em;
 }
 
 .catalog-filter-title{
