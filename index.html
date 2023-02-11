@@ -16,7 +16,7 @@
       </a>
       <div class="navigation-container">
         <div class="form-navigation">
-          <form action="https://echo.htmlacademy.ru/courses" method="get">
+          <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="get">
             <label class="visually-hidden" for="search">Поиск по сайту</label>
             <input type="text" placeholder="Поиск по сайту" id="search">
             <button class="" type="submit" value="Найти">Найти</button>
@@ -168,12 +168,12 @@
 
         <div class="subscription-container">
           <section class="subscription">
-            <h2 class="subtitle">Подпишитесь на рассылку</h2>
+            <h2 class="subtitle subtitle-subscription">Подпишитесь на рассылку</h2>
             <p>
               Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
               распаковками, а также акции, спецпредложения и вот это вот всё.
             </p>
-            <form action="https://echo.htmlacademy.ru/courses" method="post">
+            <form class="form-subscription" action="https://echo.htmlacademy.ru/courses" method="post">
               <label for="newsletter-email"></label>
               <input type="email" placeholder="Ваш e-mail" id="newsletter-email">
               <button class="submit link" type="submit">Подписаться</button>
@@ -187,9 +187,8 @@
     <footer class="page-footer">
       <div class="footer-container">
         <div>
-          <a href="index.html">
-            <img class="footer-contacts-logo" src="images/footer/logo-footer.svg" width="145" height="36"
-              alt="Магазин Девайс.">
+          <a class="" href="index.html">
+            <img class="footer-logo" src="images/footer/logo-footer.svg" width="145" height="36" alt="Магазин Девайс.">
           </a>
           <p class="address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </div>
@@ -206,15 +205,18 @@
               <a class="navigation-link link" href="#">Контакты</a>
             </li>
           </ul>
-          <a href="https://t.me/htmlacademy"></a>
-          <a href="https://www.youtube.com/eserhtmlacademyru"></a>
-          <a href="https://twitter.com/htmlacademy_ru"></a>
+          <div class="socials">
+            <a class="telegram" href="https://t.me/htmlacademy"></a>
+            <a class="youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+            <a class="twitter" href="https://twitter.com/htmlacademy_ru"></a>
+          </div>
         </div>
 
         <div>
           <a class="phone" href="+78128121212">Тел.: +7 (812) 812-12-12</a>
           <a class="htmlacademy-link" href="https://htmlacademy.ru">
-            <img src="images/footer/link-all.svg" width="115" height="33" alt="Вебсайт htmlacademy.">
+            <img class="footer-htmlacademy" src="images/footer/link-all.svg" width="115" height="33"
+              alt="Вебсайт htmlacademy.">
           </a>
         </div>
       </div>
