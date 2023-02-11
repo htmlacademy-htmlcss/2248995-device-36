@@ -68,20 +68,36 @@ body {
   color: #000000;
   width: 1160px;
   margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
   margin-top: 40px;
-
 }
 
 .logo-header {
-  padding-left: 60px;
+  margin-top: -20px;
+}
+
+.form-search {
+  display: flex;
+
 }
 
 .link {
   letter-spacing: 0.2em;
 }
 
-.main-container {
+.navigation-page {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+
+}
+
+.main-index {
   flex-grow: 1;
+}
+
+.main-container {
   margin: 0 auto;
 }
 
@@ -283,11 +299,21 @@ navigation-item-gadjets {
 
 .subscription-container {
   background-color: #f0f0f0;
+  height: 421px;
 }
 
 .subscription {
   width: 1160px;
   margin: 0 auto;
+}
+
+subtitle-subscription {
+  display: inline;
+  margin-top: 64px;
+}
+
+form-subscription {
+  display: flex;
 }
 
 .submit {
@@ -303,24 +329,115 @@ navigation-item-gadjets {
 .page-footer {
   background-color: #444444;
   color: #ffffff;
-  width: auto;
   height: 321px;
+  width: auto;
+  padding: 0 140px 61px;
 }
 
 .footer-container {
   width: 1160px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 358px 444px 358px;
+  grid-template-rows: 110px 170px;
+}
+
+.footer-contacts-logo {
+  margin-top: 61px;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 0;
+  grid-area: fn;
+  margin-bottom: 62px;
+  margin-top: 137px;
+
 }
 
 .address-text {
+  display: block;
+  height: 40px;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
+}
+
+
+.footer-logo {
+  margin-top: 61px;
+  margin-bottom: 35px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .phone {
   color: inherit;
+  display: block;
+  margin-left: 183px;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  grid-area: p;
+  margin-top: 140px;
+  margin-bottom: 63px;
 }
 
+.htmlacademy-link {
+  margin-left: 183px;
+  margin-right: 0;
+}
+
+.telegram {
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  color: inherit;
+  width: 40px;
+}
+
+.telegram::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-image: url("../images/footer/telegram.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 50%;
+}
+
+.youtube::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-image: url("../images/footer/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 50%;
+}
+
+.twitter::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-image: url("../images/footer/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 50%;
+}
 
 
 /* Стили для cataloga */
@@ -337,6 +454,8 @@ navigation-item-gadjets {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  margin: 0;
+  padding: 70px 40px 78px;
 }
 
 .inner-header-title {
@@ -387,6 +506,7 @@ navigation-item-gadjets {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  letter-spacing: -0.02em;
 }
 
 .product-card-container {
