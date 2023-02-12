@@ -17,32 +17,34 @@
       <div class="navigation-container">
         <div class="form-navigation">
           <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="get">
-            <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <input type="text" placeholder="Поиск по сайту" id="search">
-            <button class="" type="submit" value="Найти">Найти</button>
+            <label class="visually-hidden search" for="search">Поиск по сайту</label>
+            <input class="search" type="text" placeholder="Поиск по сайту" id="search">
+            <button class="search-submit" type="submit" value="Найти">Найти</button>
           </form>
-          <ul class="navigation-list navigation-page">
-            <li class="navigation-item">
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item entrance">
               <a class="navigation-link" href="#">Войти</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Сравнить</a>
+            <li class="navigation-item compare">
+              <a class="navigation-link " href="#">Сравнить</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Корзина</a>
+            <li class="navigation-item basket">
+              <a class="navigation-link " href="#">Корзина</a>
             </li>
           </ul>
         </div>
-        <nav class="page-navigation">
-          <a class="navigation-link link" href="catalog.html">Каталог товар</a>
-          <ul>
-            <li class="navigation-item">
+        <nav>
+          <ul class="page-navigation">
+            <li class="navigation-item navigation-catalog">
+              <a class="navigation-link link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="navigation-item navigation-delivery">
               <a class="navigation-link link" href="#">Доставка</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-guarantee">
               <a class="navigation-link link" href="#">Гарантия</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-cotacts">
               <a class="navigation-link link" href="#">Контакты</a>
             </li>
           </ul>
@@ -106,7 +108,7 @@
         </section>
         <section class="service">
           <div class="service-container">
-            <ul>
+            <ul class="service-container-wrapper">
               <li class="navigation-item">
                 <a class="navigation-link link" href="#">Доставка</a>
               </li>
@@ -117,17 +119,20 @@
                 <a class="navigation-link link" href="#">Кредит</a>
               </li>
             </ul>
-            <h2 class="subtitle">Доставка</h2>
-            <p>
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-              совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
-              этаж.
-            </p>
+            <div class="subtitle-delivery-container">
+              <h2 class="subtitle">Доставка</h2>
+              <p class="delivery">
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
+                этаж.
+              </p>
+            </div>
+
           </div>
         </section>
         <div class="container">
           <a class="navigation-link" href="">
-            <p class="delivery link">Доставим редкий товар под заказ</p>
+            <p class="link rare">Доставим редкий товар под заказ</p>
           </a>
         </div>
         <div class="about-contacts-conteiner container">
@@ -167,18 +172,21 @@
         </div>
 
         <div class="subscription-container">
-          <section class="subscription">
-            <h2 class="subtitle subtitle-subscription">Подпишитесь на рассылку</h2>
-            <p>
-              Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
-              распаковками, а также акции, спецпредложения и вот это вот всё.
-            </p>
+          <section class="subscription-wrapper">
+            <div class="subscription">
+              <h2 class="subtitle subtitle-subscription">Подпишитесь на рассылку</h2>
+              <p class="text">
+                Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
+                распаковками, а также акции, спецпредложения и вот это вот всё.
+              </p>
+            </div>
+
             <form class="form-subscription" action="https://echo.htmlacademy.ru/courses" method="post">
               <label for="newsletter-email"></label>
-              <input type="email" placeholder="Ваш e-mail" id="newsletter-email">
+              <input class="useremail" type="email" placeholder="Ваш e-mail" id="newsletter-email">
               <button class="submit link" type="submit">Подписаться</button>
+              <span class="ok">Это бесплатно</span>
             </form>
-            <span class="ok">Это бесплатно</span>
           </section>
         </div>
       </div>
