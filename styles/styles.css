@@ -77,8 +77,26 @@ body {
   margin-top: -20px;
 }
 
+.search {
+  width: 359px;
+  background-color: #FFE17F;
+  border-radius: 50px 0px 0px 50px;
+  margin: 0;
+}
+
+.search-submit {
+  width: 160px;
+  background-color: #FFE17F;
+  padding: 0;
+  border-radius: 0px 50px 50px 0px;
+  border-color: #000000;
+}
+
 .form-search {
   display: flex;
+  width: 517px;
+  height: 40px;
+  background-color: #FFE17F;
 
 }
 
@@ -86,11 +104,50 @@ body {
   letter-spacing: 0.2em;
 }
 
-.navigation-page {
+.navigation-user {
   display: flex;
   justify-content: flex-end;
   margin: 0;
+  padding: 0;
+  width: 606px;
+  margin-left: 550px;
+  margin-top: -34px;
+  margin-bottom: 30px;
+}
 
+.entrance {
+  width: 231px;
+
+}
+
+.basket {
+  margin-left: 48px;
+}
+
+.compare {
+  margin-left: 91px;
+}
+
+.navigation-link {
+  display: block;
+}
+
+.page-navigation {
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.navigation-delivery {
+  margin-left: auto;
+}
+
+.navigation-cotacts {
+  margin-left: 51px;
+}
+
+.navigation-guarantee {
+  margin-left: 47px;
 }
 
 .main-index {
@@ -131,6 +188,7 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  margin-top: 59px;
 }
 
 .product-desc {
@@ -251,12 +309,17 @@ navigation-item-gadjets {
 
 .service {
   background-color: #f0f0f0;
+  margin-bottom: 70px;
 }
 
 .service-container {
   width: 1160px;
   margin: 0 auto;
   display: flex;
+}
+
+.service-container-wrapper {
+  margin-right: 116px;
 }
 
 .subtitle {
@@ -267,17 +330,44 @@ navigation-item-gadjets {
   text-transform: none;
 }
 
+.subtitle-delivery-container {
+  margin-top: -70px;
+}
 
 .delivery {
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 18px;
+  line-height: 30px;
+  width: 448px;
+}
+
+.rare {
+  width: 910px;
   text-align: center;
+  background-color: #F0F0F0;
+  height: 100px;
+  position: relative;
+  display: block;
+  font-family: "Raleway", sans serif;
+  color: inherit;
+
+}
+
+.rare::before {
+  content: "";
+  display: block;
+  width: 125px;
+  height: 100px;
+  background-color: #FFE17F;
+  background-image: url("../images/main/svg/truck.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .about-contacts-conteiner {
   width: 1160px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .about {
@@ -300,20 +390,41 @@ navigation-item-gadjets {
 .subscription-container {
   background-color: #f0f0f0;
   height: 421px;
+  padding: 64px 133px 56px 141px;
+}
+
+.subscription-wrapper {
+  width: 1160px;
 }
 
 .subscription {
-  width: 1160px;
-  margin: 0 auto;
-}
-
-subtitle-subscription {
-  display: inline;
-  margin-top: 64px;
-}
-
-form-subscription {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 144px;
+}
+
+.text {
+  width: 560px;
+}
+
+.subtitle-subscription {
+  display: inline;
+  padding-left: 6px;
+  width: 348px;
+  margin: 0;
+}
+
+.form-subscription {
+  width: 1158px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.useremail {
+  width: 557px;
+  background-color: #f0f0f0;
+  height: 55px;
 }
 
 .submit {
@@ -323,7 +434,15 @@ form-subscription {
   line-height: 21px;
   letter-spacing: 0.2em;
   align-items: center;
-  text-align: center
+  text-align: center;
+  height: 55px;
+  border: 1px solid #000000;
+}
+
+.ok {
+  align-items: start;
+  height: 57px;
+  width: 160px;
 }
 
 .page-footer {
@@ -337,24 +456,11 @@ form-subscription {
 .footer-container {
   width: 1160px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 358px 444px 358px;
-  grid-template-rows: 110px 170px;
+  display: flex;
 }
 
 .footer-contacts-logo {
   margin-top: 61px;
-}
-
-.footer-navigation {
-  display: flex;
-  justify-content: center;
-  gap: 35px;
-  padding: 0;
-  grid-area: fn;
-  margin-bottom: 62px;
-  margin-top: 137px;
-
 }
 
 .address-text {
@@ -363,8 +469,19 @@ form-subscription {
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+  width: 234px;
+  margin-right: 124px;
 }
 
+.footer-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 0;
+  margin-bottom: 62px;
+  margin-top: 137px;
+  margin-right: 173px;
+}
 
 .footer-logo {
   margin-top: 61px;
@@ -375,12 +492,12 @@ form-subscription {
   display: flex;
   justify-content: center;
   gap: 15px;
+  margin-right: 183px;
 }
 
 .phone {
   color: inherit;
   display: block;
-  margin-left: 183px;
   font-size: 16px;
   line-height: 20px;
   align-items: center;
@@ -390,8 +507,7 @@ form-subscription {
 }
 
 .htmlacademy-link {
-  margin-left: 183px;
-  margin-right: 0;
+  margin: 0;
 }
 
 .telegram {
@@ -453,9 +569,14 @@ form-subscription {
 .product-card-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
   margin: 0;
   padding: 70px 40px 78px;
+  gap: 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .inner-header-title {
@@ -536,7 +657,20 @@ form-subscription {
   margin-left: 40px;
   margin-right: 40px;
   font-size: 16px;
-  line-height: 19px
+  line-height: 19px;
+  margin-bottom: 44px;
+  ;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  background-color: #EBEBEB;
+  margin: 0 40px 78px;
+  width: 760px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 25px;
 }
 
 .pagination-prev {
@@ -548,6 +682,12 @@ form-subscription {
 
 .pagination {
   display: flex;
+  padding: 0;
+  margin: 0;
+  color: #444444;
+  line-height: 20px;
+  font-size: 16px;
+  text-align: center;
 }
 
 /* Каталог-фильтр-карточки*/
@@ -559,4 +699,5 @@ form-subscription {
 
 .filter-container {
   width: 320px;
+  margin-top: 25px;
 }
