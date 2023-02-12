@@ -17,34 +17,36 @@
       </a>
       <div class="navigation-container">
         <div>
-          <form action="https://echo.htmlacademy.ru/courses" method="get">
-            <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <input type="text" placeholder="Поиск по сайту" id="search">
-            <button type="submit" value="Найти">Найти</button>
+          <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="get">
+            <label class="visually-hidden search" for="search">Поиск по сайту</label>
+            <input class="search" type="text" placeholder="Поиск по сайту" id="search">
+            <button class="search-submit" type="submit" value="Найти">Найти</button>
           </form>
-          <ul class="navigation-list">
-            <li class="navigation-item">
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item entrance">
               <a class="navigation-link" href="#">Войти</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Сравнить</a>
+            <li class="navigation-item compare">
+              <a class="navigation-link " href="#">Сравнить</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Корзина</a>
+            <li class="navigation-item basket">
+              <a class="navigation-link " href="#">Корзина</a>
             </li>
           </ul>
         </div>
         <div>
-          <nav class="page-navigation">
-            <a class="navigation-link link" href="catalog.html">Каталог товар</a>
-            <ul>
-              <li class="navigation-item">
+          <nav>
+            <ul class="page-navigation">
+              <li class="navigation-item navigation-catalog">
+                <a class="navigation-link link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="navigation-item navigation-delivery">
                 <a class="navigation-link link" href="#">Доставка</a>
               </li>
-              <li class="navigation-item">
+              <li class="navigation-item navigation-guarantee">
                 <a class="navigation-link link" href="#">Гарантия</a>
               </li>
-              <li class="navigation-item">
+              <li class="navigation-item navigation-cotacts">
                 <a class="navigation-link link" href="#">Контакты</a>
               </li>
             </ul>
@@ -128,7 +130,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="link" type="submit" value="Показать">Показать</button>
+              <button class="navigation-link link" type="submit" value="Показать">Показать</button>
             </form>
           </div>
 
@@ -180,39 +182,41 @@
             <div class="load">
               <a class="navigation-link link" href="#">Загрузить ещё</a>
             </div>
-            <a class="navigation-link pagination-link link" href="#">
-              <span class="visually-hidden">Предыдущая страница</span>Назад
-            </a>
-            <ol class="pagination">
-              <li class="pagination-item">
-                <a class="navigation-link pagination-link pagination-prev pagination-disabled" href="#">
-                  <span>1</span>
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a class="navigation-link pagination-link pagination-prev pagination-disabled" href="#">
-                  <span>2</span>
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a class="navigation-link pagination-link pagination-prev pagination-disabled" href="#">
-                  <span>3</span>
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a class="navigation-link pagination-link pagination-prev pagination-disabled" href="#">
-                  <span>...</span>
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a class="navigation-link pagination-link pagination-prev pagination-disabled" href="#">
-                  <span class="visually-hidden">15</span>
-                </a>
-              </li>
-            </ol>
-            <a class="navigation-link pagination-link link" href="#">
-              <span class="visually-hidden">Следующая страница</span>Вперед
-            </a>
+            <div class="pages">
+              <a class="navigation-link pagination-link link" href="#">Назад
+                <span class="visually-hidden">Предыдущая страница</span>
+              </a>
+              <ol class="pagination">
+                <li class="pagination-item">
+                  <a class="navigation-link pagination-link pagination-prev pagination-disabled" href="#">
+                    <span>1</span>
+                  </a>
+                </li>
+                <li class="pagination-item">
+                  <a class="navigation-link pagination-link pagination-prev pagination-disabled" href="#">
+                    <span>2</span>
+                  </a>
+                </li>
+                <li class="pagination-item">
+                  <a class="navigation-link pagination-link pagination-prev pagination-disabled" href="#">
+                    <span>3</span>
+                  </a>
+                </li>
+                <li class="pagination-item">
+                  <a class="navigation-link pagination-link pagination-prev pagination-disabled" href="#">
+                    <span>...</span>
+                  </a>
+                </li>
+                <li class="pagination-item">
+                  <a class="navigation-link pagination-link pagination-prev pagination-disabled" href="#">
+                    <span>15</span>
+                  </a>
+                </li>
+              </ol>
+              <a class="navigation-link pagination-link link" href="#">Вперед
+                <span class="visually-hidden">Следующая страница</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
