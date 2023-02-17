@@ -75,6 +75,8 @@ body {
 
 .form-navigation {
   display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .form-search {
@@ -132,7 +134,10 @@ body {
 .page-navigation {
   display: flex;
   margin: 0;
+  padding: 0;
   flex-wrap: wrap;
+  min-height: 50px;
+  align-items: center;
 }
 
 .navigation-delivery {
@@ -328,8 +333,9 @@ navigation-item-gadjets {
 }
 
 .service-container {
-  width: 1160px;
+  width: 1280px;
   display: flex;
+  margin: 0 auto;
 }
 
 .service-container-wrapper {
@@ -384,7 +390,7 @@ navigation-item-gadjets {
 }
 
 .rare {
-  width: 910px;
+  width: 1160px;
   text-align: center;
   background-color: #F0F0F0;
   height: 100px;
@@ -392,18 +398,8 @@ navigation-item-gadjets {
   display: block;
   font-family: "Raleway", sans serif;
   color: inherit;
-
-}
-
-.rare::before {
-  content: "";
-  display: block;
-  width: 125px;
-  height: 100px;
-  background-color: #FFE17F;
-  background-image: url("../images/main/svg/truck.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  margin: 0;
+  margin-bottom: 70px;
 }
 
 .about-contacts-conteiner {
@@ -511,7 +507,7 @@ navigation-item-gadjets {
 
 .footer-container {
   width: 1160px;
-  margin: 0;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 300px 500px 215px;
   grid-template-rows: 36px 50px 100px;
