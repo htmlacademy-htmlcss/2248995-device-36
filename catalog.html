@@ -11,12 +11,12 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden" id="index">Магазин "Девайс"</h1>
-      <a href="index.html" aria-current="page">
+      <a href="index.html">
         <img class="logo logo-header" src="images/header/logo.svg" width="145" height="36"
           alt="Логотип Магазина Девайс.">
       </a>
       <div class="navigation-container">
-        <div>
+        <div class="form-navigation">
           <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="get">
             <label class="visually-hidden search" for="search">Поиск по сайту</label>
             <input class="search" type="text" required placeholder="Поиск по сайту" id="search">
@@ -34,24 +34,23 @@
             </li>
           </ul>
         </div>
-        <div>
-          <nav>
-            <ul class="page-navigation">
-              <li class="navigation-item navigation-catalog">
-                <a class="navigation-link link" href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="navigation-item navigation-delivery">
-                <a class="navigation-link link" href="#">Доставка</a>
-              </li>
-              <li class="navigation-item navigation-guarantee">
-                <a class="navigation-link link" href="#">Гарантия</a>
-              </li>
-              <li class="navigation-item navigation-cotacts">
-                <a class="navigation-link link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav>
+          <ul class="page-navigation">
+            <li class="navigation-item navigation-catalog">
+              <a class="navigation-link link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="navigation-item navigation-delivery">
+              <a class="navigation-link link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-item navigation-guarantee">
+              <a class="navigation-link link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-item navigation-cotacts">
+              <a class="navigation-link link" href="#">Контакты</a>
+            </li>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -136,15 +135,15 @@
 
           <div class="product-card-container">
             <div class="popular-container">
-              <h3 class="filter">Сортировка:</h3>
-              <select>
+              <h3 class="filter filter-pupular">Сортировка:</h3>
+              <select class="popular">
                 <option>Популярные</option>
               </select>
               <button type="button">
-                <span class="visually-hidden">Сортировка</span>Более популярные
+                <span class="visually-hidden max-pupular">Сортировка</span>Более популярные
               </button>
               <button type="button">
-                <span class="visually-hidden">Сортировка</span>Менее популярные
+                <span class="visually-hidden min-pupular">Сортировка</span>Менее популярные
               </button>
             </div>
             <ul class="product-card-group">
@@ -185,7 +184,7 @@
               <a class="navigation-link link" href="#">Загрузить ещё</a>
             </div>
             <div class="pages">
-              <a class="navigation-link pagination-link link" href="#">Назад
+              <a class="navigation-link pagination-link link link-button no-active" href="#">Назад
                 <span class="visually-hidden">Предыдущая страница</span>
               </a>
               <ol class="pagination">
@@ -215,7 +214,7 @@
                   </a>
                 </li>
               </ol>
-              <a class="navigation-link pagination-link link" href="#">Вперед
+              <a class="navigation-link pagination-link link link-button" href="#">Вперед
                 <span class="visually-hidden">Следующая страница</span>
               </a>
             </div>
