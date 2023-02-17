@@ -18,7 +18,7 @@
         <div class="form-navigation">
           <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="get">
             <label class="visually-hidden search" for="search">Поиск по сайту</label>
-            <input class="search" type="text" placeholder="Поиск по сайту" id="search">
+            <input class="search" type="text" required placeholder="Поиск по сайту" id="search">
             <button class="search-submit" type="submit" value="Найти">Найти</button>
           </form>
           <ul class="navigation-list navigation-user">
@@ -46,6 +46,7 @@
             </li>
             <li class="navigation-item navigation-cotacts">
               <a class="navigation-link link" href="#">Контакты</a>
+            </li>
             </li>
           </ul>
         </nav>
@@ -90,7 +91,7 @@
               <a class="navigation-link-gadjets" href="#">Виртуальная реальность</a>
             </li>
             <li class="navigation-item-gadjets">
-              <a class="navigation-link-gadjets monopods" href="#">Моноподы для селфи</a>
+              <a class="navigation-link-gadjets monopods" href="#">Моноподы <br> для селфи</a>
             </li>
             <li class="navigation-item-gadjets">
               <a class="navigation-link-gadjets action" href="#">Экшн-камеры</a>
@@ -110,13 +111,13 @@
           <div class="service-container">
             <ul class="service-container-wrapper">
               <li class="navigation-item">
-                <a class="navigation-link link" href="#">Доставка</a>
+                <a class="navigation-link link active" href="#">Доставка</a>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link link" href="#">Гарантия</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link link" href="#">Кредит</a>
+                <a class="navigation-link link credit" href="#">Кредит</a>
               </li>
             </ul>
             <div class="subtitle-delivery-container">
@@ -127,14 +128,15 @@
                 этаж.
               </p>
             </div>
-
           </div>
         </section>
-        <div class="container">
+
+        <div class="container-delivery">
           <a class="navigation-link" href="">
             <p class="link rare">Доставим редкий товар под заказ</p>
           </a>
         </div>
+
         <div class="about-contacts-conteiner container">
           <section class="about">
             <h2 class="subtitle">О нас</h2>
@@ -183,7 +185,7 @@
 
             <form class="form-subscription" action="https://echo.htmlacademy.ru/courses" method="post">
               <label for="newsletter-email"></label>
-              <input class="useremail" type="email" placeholder="Ваш e-mail" id="newsletter-email">
+              <input class="user-email" type="email" placeholder="Ваш e-mail" required id="newsletter-email">
               <button class="submit link" type="submit">Подписаться</button>
               <span class="ok">Это бесплатно</span>
             </form>
@@ -194,39 +196,31 @@
 
     <footer class="page-footer">
       <div class="footer-container">
-        <div>
-          <a class="" href="index.html">
-            <img class="footer-logo" src="images/footer/logo-footer.svg" width="145" height="36" alt="Магазин Девайс.">
-          </a>
-          <p class="address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <a class="" href="index.html">
+          <img class="footer-logo" src="images/footer/logo-footer.svg" width="145" height="36" alt="Магазин Девайс.">
+        </a>
+        <p class="address-text">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.Санкт-Петербург</p>
+        <ul class="footer-navigation">
+          <li class="navigation-item">
+            <a class="navigation-link link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="socials">
+          <a class="telegram" href="https://t.me/htmlacademy"></a>
+          <a class="youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+          <a class="twitter" href="https://twitter.com/htmlacademy_ru"></a>
         </div>
-
-        <div>
-          <ul class="footer-navigation">
-            <li class="navigation-item">
-              <a class="navigation-link link" href="#">Доставка</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link link" href="#">Гарантия</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link link" href="#">Контакты</a>
-            </li>
-          </ul>
-          <div class="socials">
-            <a class="telegram" href="https://t.me/htmlacademy"></a>
-            <a class="youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
-            <a class="twitter" href="https://twitter.com/htmlacademy_ru"></a>
-          </div>
-        </div>
-
-        <div>
-          <a class="phone" href="+78128121212">Тел.: +7 (812) 812-12-12</a>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru">
-            <img class="footer-htmlacademy" src="images/footer/link-all.svg" width="115" height="33"
-              alt="Вебсайт htmlacademy.">
-          </a>
-        </div>
+        <a class="phone" href="+78128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru">
+          <img class="footer-htmlacademy" src="images/footer/link-all.svg" width="115" height="33"
+            alt="Вебсайт htmlacademy.">
+        </a>
       </div>
     </footer>
   </body>
