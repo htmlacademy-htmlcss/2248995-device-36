@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" size="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -56,31 +57,28 @@
     <main class="main-index">
       <div class="main-container">
         <section class="slider-slogan-container">
-          <div class="slider-container">
-            <button type="button">
-              <span class="visually-hidden">Кнопка назад</span>
-            </button>
-            <img src="images/main/png/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
-            <button type="button">
-              <span class="visually-hidden">Кнопка вперед</span>
-            </button>
-            <img src="images/main/svg/01.svg" width="250" height="135" alt="Слайдер номер 01."
-              style="background-color: blue;">
-          </div>
-
+          <button class="button-back" type="button">
+            <span class="visually-hidden ">Кнопка назад</span>
+          </button>
+          <img class="slider" src="images/main/png/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
+          <button class="button-go" type="button">
+            <span class="visually-hidden ">Кнопка вперед</span>
+          </button>
+          <img class="slider-number" src="images/main/svg/01.svg" width="250" height="135" alt="Слайдер номер 01."
+            style="background-color:#FFE17F ">
           <div class="slogan-conteiner">
             <p class="slogan">Порхает как бабочка, жалит как пчела!</p>
-            <p>
+            <p class="slogan-desc">
               Этот обычный, на первый взгляд,
               квадрокоптер оснащен мощным лазером,
               замаскированным под стандартную камеру.
             </p>
             <a class="navigation-link link" href="#">Подробнее</a>
             <dl class="table">
-              <dt class="product-value">800 м</dt>
-              <dd class="product-desc">Дальность полета</dd>
-              <dt class="product-value">50 м</dt>
-              <dd class="product-desc">Радиус поражения</dd>
+              <dt class="product-value-800">800 м</dt>
+              <dd class="product-desc-800">Дальность полета</dd>
+              <dt class="product-value-50">50 м</dt>
+              <dd class="product-desc-50">Радиус поражения</dd>
             </dl>
           </div>
         </section>
