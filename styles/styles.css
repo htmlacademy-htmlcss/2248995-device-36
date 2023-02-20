@@ -337,6 +337,8 @@ body {
   line-height: 20px;
   gap: 40px;
   padding: 0;
+  height: 253px;
+  margin-bottom: 70px;
 }
 
 navigation-item-gadjets {
@@ -434,23 +436,21 @@ navigation-item-gadjets {
 }
 
 .service {
-  background-color: #f0f0f0;
   margin-bottom: 70px;
-  padding-top: 64px;
-  padding-left: 140px;
+  height: 391px;
+  background-color: #f0f0f0;
+
 }
 
 .service-container {
-  width: 1280px;
-  display: flex;
   margin: 0 auto;
+  display: flex;
 }
 
 .service-container-wrapper {
-  margin: 0;
   padding: 0;
+  margin: 0;
   margin-right: 116px;
-
 }
 
 .link-active {
@@ -461,7 +461,6 @@ navigation-item-gadjets {
   padding-top: 9px;
   padding-bottom: 11px;
   margin-bottom: 56px;
-  margin-top: -59px;
 }
 
 .link-guarantee {
@@ -896,7 +895,7 @@ img {
 }
 
 .link-button {
-  padding: 25px 25px 4px;
+  padding: 25px 25px;
 }
 
 .no-active {
