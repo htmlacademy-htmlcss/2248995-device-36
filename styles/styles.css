@@ -250,7 +250,6 @@ body {
   margin-right: 276px;
   cursor: pointer;
   z-index: 1;
-
 }
 
 .navigation-catalog::before {
@@ -266,19 +265,26 @@ body {
   top: 0;
 }
 
-.delivery {
-  position: relative;
+.navigation-item-catalog:focus-within .subcatalog {
+  display: block;
 }
 
-.delivery::after {
-  content: "";
-  position: absolute;
-  width: 136px;
-  height: 164px;
-  background-image: url("../images/main/svg/man.svg");
-  background-repeat: no-repeat;
-  top: -78px;
-  left: 530px;
+.navigation-item-catalog:focus .subcatalog {
+  background-color: #FFE17F;
+  width: 1160px;
+  height: 180px;
+  display: flex;
+  z-index: 2;
+}
+
+.navigation-item-catalog:active .subcatalog {
+  display: block;
+}
+
+.subcatalog {
+  display: none;
+  list-style: none;
+  text-decoration: none;
 }
 
 .navigation-cotacts {
@@ -305,7 +311,6 @@ body {
   margin-top: -120px;
   height: 560px;
   position: relative;
-
 }
 
 .no-visually {
@@ -315,7 +320,6 @@ body {
 .slogan-conteiner {
   width: 560px;
   z-index: 1;
-
 }
 
 .slider {
@@ -327,7 +331,6 @@ body {
   height: 135px;
   width: 250px;
   padding-left: 274px;
-
 }
 
 .button-back {
@@ -341,7 +344,6 @@ body {
   top: 180px;
   left: 40px;
   cursor: pointer;
-
 }
 
 .button-back:hover {
@@ -412,8 +414,6 @@ body {
   border: none;
 }
 
-
-
 .slogan {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -454,7 +454,6 @@ body {
   top: 16px;
   background-color: #FFE17F;
   z-index: -1;
-
 }
 
 .link-slogan:hover {
@@ -647,8 +646,17 @@ body {
   margin-bottom: 70px;
 }
 
-navigation-item-gadjets {
-  width: 160px;
+.navigation-item-gadjets:hover {
+  background-color: #FFC700;
+}
+
+.navigation-item-gadjets:active {
+  opacity: 30%;
+}
+
+.navigation-item-gadjets:focus-visible {
+  outline: 2px solid #AF4FFF;
+  height: 257px;
 }
 
 .navigation-link-gadjets {
@@ -742,6 +750,12 @@ navigation-item-gadjets {
   margin-bottom: 117px;
 }
 
+
+
+
+
+/* Сервис*/
+
 .service {
   margin-bottom: 70px;
   height: 391px;
@@ -759,21 +773,11 @@ navigation-item-gadjets {
   margin: 0;
   margin-right: 116px;
   padding-top: 64px;
-}
-
-.link-active {
-  width: 280px;
-  color: #FFE17F;
-  background-color: #000000;
-  align-items: center;
-  padding-top: 9px;
-  padding-bottom: 11px;
-  margin-bottom: 56px;
-  letter-spacing: 0.2em;
   position: relative;
+  letter-spacing: 0.2em;
 }
 
-.link-active::before {
+.service-container-wrapper::before {
   content: "";
   display: block;
   width: 7px;
@@ -781,60 +785,75 @@ navigation-item-gadjets {
   background-color: #000000;
   background-repeat: no-repeat;
   position: absolute;
-  left: 279px;
-  top: -63px;
+  left: 280px;
+  top: 0;
 }
 
+.link-delivery,
 .link-guarantee {
-  margin-bottom: 55px;
-  width: 160px;
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
+  margin-bottom: 56px;
 }
 
-.link-guarantee::before {
+.link-active {
+  width: 265px;
+  color: #FFE17F;
+  background-color: #000000;
+  align-items: center;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  padding-left: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.link-active:hover {
+  padding-left: 65px;
+  max-width: 220px;
+}
+
+.link-active:active {
+  padding-left: 65px;
+}
+
+.link-active:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.link-no-active {
+  width: 160px;
+  height: 40px;
+  color: #000000;
+  position: relative;
+  justify-content: center;
+  z-index: 1;
+}
+
+.link-no-active:before {
   position: absolute;
   content: "";
   width: 160px;
   height: 8px;
+  left: 0;
   top: 16px;
   background-color: #FFE17F;
   z-index: -1;
 }
 
-.link-guarantee:hover {
+.link-no-active:hover {
   background-color: #FFE17F;
   height: 40px;
+  z-index: 0;
 }
 
-.credit::before {
-  position: absolute;
-  content: "";
-  width: 160px;
-  height: 8px;
-  top: 16px;
-  background-color: #FFE17F;
-  z-index: -1;
-}
-
-.credit:hover {
-  background-color: #FFE17F;
+.link-no-active:active {
+  background-color: #FFC700;
   height: 40px;
+  z-index: 3;
 }
 
-.credit {
-  margin-bottom: 136px;
-  width: 160px;
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  height: 40px;
-  align-items: center;
+.link-no-active:focus-visible {
+  outline: 2px solid #AF4FFF;
+
 }
 
 .subtitle {
@@ -859,7 +878,53 @@ navigation-item-gadjets {
   line-height: 30px;
   width: 448px;
   margin: 0;
+  position: relative;
 }
+
+.delivery::after {
+  content: "";
+  position: absolute;
+  width: 136px;
+  height: 164px;
+  background-image: url("../images/main/svg/man.svg");
+  background-repeat: no-repeat;
+  top: -78px;
+  left: 530px;
+}
+
+.guarantee {
+  position: relative;
+  margin: 0;
+}
+
+.guarantee::after {
+  content: "";
+  position: absolute;
+  width: 171px;
+  height: 195px;
+  background-image: url("../images/main/svg/guarantee.svg");
+  background-repeat: no-repeat;
+  top: -92px;
+  left: 530px;
+}
+
+.credit {
+  position: relative;
+  margin: 0;
+}
+
+.credit::after {
+  content: "";
+  position: absolute;
+  width: 156px;
+  height: 188px;
+  background-repeat: no-repeat;
+  background-image: url("../images/main/svg/credit.svg");
+  top: -92px;
+  left: 530px;
+}
+
+
 
 .navigation-item a {
   display: flex;
@@ -1007,7 +1072,7 @@ navigation-item-gadjets {
 }
 
 .write-me:focus {
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
 
 }
 
