@@ -11,9 +11,8 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden" id="index">Магазин "Девайс"</h1>
-      <a aria-current="page">
-        <img class="logo logo-header" src="images/header/logo.svg" width="145" height="36"
-          alt="Логотип Магазина Девайс.">
+      <a class="logo-header" href="#">
+        <img src="images/header/logo.svg" width="145" height="36" alt="Логотип Магазина Девайс.">
       </a>
       <div class="navigation-container">
         <div class="form-navigation">
@@ -24,20 +23,20 @@
           </form>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item ">
-              <a class="navigation-link login" href="#">Войти</a>
+              <a class="navigation-link navigation-link-header login" href="#">Войти</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link comparison" href="#">Сравнить</a>
+              <a class="navigation-link navigation-link-header comparison" href="#">Сравнить</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link basket" href="#">Корзина</a>
+              <a class="navigation-link navigation-link-header basket" href="#">Корзина</a>
             </li>
           </ul>
         </div>
         <nav>
           <ul class="page-navigation">
             <li class="navigation-item navigation-item-catalog">
-              <a class="navigation-link link navigation-catalog" href="#">Каталог товаров</a>
+              <a class="navigation-link link navigation-catalog navigation-link-header" href="#">Каталог товаров</a>
               <ul class="subcatalog">
                 <li><a href="">Виртуальная реальность</a></li>
                 <li><a href="">Моноподы для селфи</a></li>
@@ -48,13 +47,13 @@
               </ul>
             </li>
             <li class="navigation-item navigation-delivery ">
-              <a class="navigation-link link" href="#">Доставка</a>
+              <a class="navigation-link link navigation-link-header" href="#">Доставка</a>
             </li>
             <li class="navigation-item navigation-guarantee">
-              <a class="navigation-link link" href="#">Гарантия</a>
+              <a class="navigation-link link navigation-link-header" href="#">Гарантия</a>
             </li>
             <li class="navigation-item navigation-cotacts">
-              <a class="navigation-link link" href="#">Контакты</a>
+              <a class="navigation-link link navigation-link-header" href="#">Контакты</a>
             </li>
             </li>
           </ul>
@@ -66,10 +65,13 @@
       <div class="main-container">
         <section class="slider-slogan-container">
           <img class="slider" src="images/main/png/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
-          <button class="button-back" type="button">
+          <div>
+
+          </div>
+          <button class="slider-button slider-prev" type="button">
             <span class="visually-hidden ">Кнопка назад</span>
           </button>
-          <button class="button-go" type="button">
+          <button class="slider-button slider-next" type="button">
             <span class="visually-hidden ">Кнопка вперед</span>
           </button>
           <div class="slogan-conteiner">
@@ -87,11 +89,17 @@
               <dt class="product-value-50">50 м</dt>
               <dd class="product-desc-50">Радиус поражения</dd>
             </dl>
-            <ul class="slider-pagination">
-              <li class="slider-pagination-1"></li>
-              <li class="slider-pagination-2"></li>
-              <li class="slider-pagination-3"></li>
-            </ul>
+            <ol class="slider-pagination">
+              <li class="slider-pagination-item">
+                <span class="visually-hidden">Слайдер-1</span>
+              </li>
+              <li class="slider-pagination-item">
+                <span class="visually-hidden">Слайдер-2</span>
+              </li>
+              <li class="slider-pagination-item">
+                <span class="visually-hidden">Слайдер-3</span>
+              </li>
+            </ol>
           </div>
         </section>
 
@@ -322,7 +330,7 @@
     <footer class="page-footer">
       <div class="footer-container">
         <a class="" href="index.html">
-          <img class="footer-logo" src="images/footer/logo-footer.svg" width="145" height="36" alt="Магазин Девайс.">
+          <img class="logo-footer" src="images/footer/logo-footer.svg" width="145" height="36" alt="Магазин Девайс.">
         </a>
         <p class="address-text">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
         <ul class="footer-navigation">
