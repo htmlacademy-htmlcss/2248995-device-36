@@ -28,23 +28,63 @@
             <li class="navigation-item">
               <a class="navigation-link navigation-link-header comparison" href="#">Сравнить</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item popover">
               <a class="navigation-link navigation-link-header basket" href="#">Корзина</a>
+              <div class="popover-basket">
+                <div class="popover-content">
+                  <ol class="produkt-basket">
+                    <li class="produkt-bascet-item">
+                      <img src="images/header/product-1-small .png" alt="Любительская селфи-палка." width="39" height="43">
+                      <p>Любительская <br> селфи-палка</p>
+                    </li>
+                    <li class="produkt-bascet-item">
+                      <img src="images/header/product-2-small .png" alt="Профессиональная селфи-палка" width="39" height="43">
+                      <p>Профессиональная <br> селфи-палка</p>
+                    </li>
+                    <div class="product-all-basket">
+                      <p>Товаров:2</p>
+                      <p>Сумма: 2000P</p>
+                    </div>
+                    <button class="open-bascet" type="button">Открыть корзину</button>
+                  </ol>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
         <nav>
+
+
+
+
+
           <ul class="page-navigation">
             <li class="navigation-item navigation-item-catalog">
-              <a class="navigation-link link navigation-catalog navigation-link-header" href="#">Каталог товаров</a>
+              <a class="navigation-link link navigation-catalog " href="#">Каталог товаров</a>
               <ul class="subcatalog">
-                <li><a href="">Виртуальная реальность</a></li>
-                <li><a href="">Моноподы для селфи</a></li>
-                <li><a href="">Экшн-камеры"</a></li>
-                <li><a href="">Фитнес-браслеты</a></li>
-                <li><a href="">Умные часы</a></li>
-                <li><a href="">Квадрокоптеры</a></li>
+                <li>
+                  <a href="">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a href="">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a href="">Экшн-камеры"</a>
+                </li>
+                <li>
+                  <a href="">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a href="">Умные часы</a>
+                </li>
+                <li>
+                  <a href="">Квадрокоптеры</a>
+                </li>
               </ul>
+
+
+
+
             </li>
             <li class="navigation-item navigation-delivery ">
               <a class="navigation-link link navigation-link-header" href="#">Доставка</a>
@@ -98,7 +138,6 @@
               </li>
             </ol>
           </div>
-
         </section>
 
 
@@ -354,6 +393,41 @@
         </a>
       </div>
     </footer>
+
+
+    <div class="modal-container modal-container-close">
+      <div class="form-user-delivery">
+        <button class="modal-close-button">х
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="user-content">
+          <h2 class="modal-title">Доставим редкий заказ </h2>
+          <form action="https://echo.htmlacademy.ru/courses" method="post">
+            <p>
+              <label for="user-name">Ваше имя:</label>
+              <input class="input-form-delivery" type="text" name="" id="user-name" placeholder="Введите имя" required>
+            </p>
+
+            <p>
+              <label for="user-email">Ваш e-mail:</label>
+            </p>
+            <input class="input-form-delivery type="email" id="user-email" placeholder="почта" required>
+            <p>
+              <label for="user-delivery">Что нужно привезти:</label>
+            </p>
+
+            <input class="input-form-delivery type="text" id="user-delivery" placeholder="В свободной форме" required>
+            <label for="user-all">Колличество:</label>
+            <input class="input-form-delivery type="number" id="user-all" required min="1" max="999">
+
+            <p>
+              <button type="submit">Отправить</button>
+            </p>
+        </section>
+        </form>
+      </div>
+    </div>
+
   </body>
 
 </html>
