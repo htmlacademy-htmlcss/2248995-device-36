@@ -291,6 +291,7 @@ body {
 .popover{
   position: relative;
 }
+
 .popover-basket{
   width: 320px;
   font-family: "Rubik", sens-serif;
@@ -302,6 +303,7 @@ body {
   right: -62px;
   z-index: 1;
   box-sizing: border-box;
+  display: none;
 }
 
 .popover-content{
@@ -314,12 +316,52 @@ list-style: none;
 padding: 0;
 }
 
-.produkt-bascet-item{
+.produkt-bascet-item {
   display: flex;
   align-items: start;
   padding: 20px;
   margin: 0;
-  height: 83px;
+  position: relative;
+}
+
+.product-basket-title {
+  padding: 0;
+  margin: 0;
+  margin-left: 23px;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.produkt-1{
+  position: relative;
+}
+
+.produkt-1::after {
+  position: absolute;
+  background-image: url("../images/header/basket-item-delete.svg");
+  background-repeat: no-repeat;
+  top: 20px;
+  right: 20px;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+
+.produkt-2 {
+  position: relative;
+}
+
+.produkt-2::after {
+  position: absolute;
+  background-image: url("../images/header/basket-item-delete.svg");
+  background-repeat: no-repeat;
+  top: 20px;
+  right: 20px;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
 }
 
 .product-all-basket{
@@ -330,6 +372,7 @@ padding: 0;
   align-items: center;
   margin: 0;
 }
+
 .open-bascet{
   width: 280px;
   text-transform: uppercase;
@@ -1595,8 +1638,7 @@ z-index: 2;
 
 button-show:hover::before{
   height: 100%;
-  top:0;
-  transition: .3s;}
+}
 
 .popular-container {
   display: flex;
