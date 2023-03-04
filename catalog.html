@@ -83,9 +83,39 @@
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/courses" method="post">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость</legend>
-                0<input class="min" type="range" min="0" max="10000" step="100">10000
-                <input class="max" type="range" min="0" max="10000" step="100">
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left:0; width:119px;" >
+                      <button class="range-toogle toogle-min" type="button"></button>
+                      <button class="range-toogle toogle-max" type="button"></button>
+                    </div>
+                  </div>
+                  <div class="range-wraper-inputs">
+                    <label class="catalog-filter-label">
+                      от<input class="range-input min" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="catalog-filter-label">
+                      до<input class="range-input" type="number" value="5000" name="max-price">
+                    </label>
+                  </div>
+                </div>
               </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Цвет</legend>
