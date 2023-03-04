@@ -400,28 +400,34 @@
         <button class="modal-close-button">х
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <section class="user-content">
+        <section class="user-content-container">
           <h2 class="modal-title">Доставим редкий заказ </h2>
           <form action="https://echo.htmlacademy.ru/courses" method="post">
-            <p>
-              <label for="user-name">Ваше имя:</label>
-              <input class="input-form-delivery" type="text" name="" id="user-name" placeholder="Введите имя" required>
-            </p>
+            <div class="user">
+              <p class="user-content">
+                <label  class="user-name" for="user-name">Ваше имя:</label> <br>
+                <input  class="user-name-input" class="input-form-delivery" type="text" name="" id="user-name" placeholder="Введите имя" required>
+              </p>
+              <p class="user-content">
+                <label class="user-name" for="user-e-mail">Ваш e-mail:</label> <br>
+                <input class="user-mail-input" type="email" id="user-e-mail" placeholder="почта" required>
+              </p>
+              <p class="user-content">
+                <label class="user-delivery" for="user-delivery">Что нужно привезти:</label> <br>
+                <input class="user-delivery-input" type="text" id="user-delivery" placeholder="В свободной форме" required>
+              </p>
+              <p class="user-content">
+                <p class="user-title-all">Колличество:</p>
+                <div class="user-button-all">
+                  <button class="user-all-button" type="button" required></button>
+                  <button class="user-all-button" type="button" required></button>
+                  <button class="user-all-button" type="button" required></button>
+                </div>
+              </p>
+              <p>
+            </div>
 
-            <p>
-              <label for="user-email">Ваш e-mail:</label>
-            </p>
-            <input class="input-form-delivery type="email" id="user-email" placeholder="почта" required>
-            <p>
-              <label for="user-delivery">Что нужно привезти:</label>
-            </p>
-
-            <input class="input-form-delivery type="text" id="user-delivery" placeholder="В свободной форме" required>
-            <label for="user-all">Колличество:</label>
-            <input class="input-form-delivery type="number" id="user-all" required min="1" max="999">
-
-            <p>
-              <button type="submit">Отправить</button>
+              <button class="button-modal-delivery" type="submit">Отправить</button>
             </p>
         </section>
         </form>
