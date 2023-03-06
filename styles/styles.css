@@ -81,7 +81,7 @@ body {
 
 .logo-header {
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .logo-header:hover {
@@ -183,6 +183,7 @@ body {
   width: 606px;
   align-items: center;
   min-height: 30px;
+  justify-content: flex-end;
 }
 
 
@@ -403,7 +404,6 @@ padding: 0;
 }
 
 .navigation-catalog {
-  position: relative;
   padding-right: 57px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -426,6 +426,7 @@ padding: 0;
 .navigation-item-catalog{
   margin-right: auto;
   z-index: 1;
+  position: relative;
 }
 .navigation-item-catalog:focus-within .subcatalog {
   display: block;
@@ -450,15 +451,14 @@ outline: 2px solid #AF4FFF;
   list-style: none;
   text-decoration: none;
   background-color: #FFE17F;
-  width: 1120px;
+  width: 1119px;
   z-index: 2;
   display: none;
   position: absolute;
-  top: 215px;
-  left: 169px;
+  top: 50px;
+  left: -60px;
   padding-bottom: 80px;
   padding-top: 30px;
-
 }
 
 .subcatalog-all{
@@ -1933,7 +1933,11 @@ select:focus-visible {
   background-color: #f0f0f0;
   font-size: 18px;
   line-height: 30px;
-  padding-right: 10px;
+  padding-right: 32px;
+  appearance: none;
+  background-image: url("../images/main/svg/select.svg");
+  background-repeat: no-repeat;
+  background-position: 93% 53%;
 }
 
 
@@ -2125,40 +2129,18 @@ select:focus-visible {
 }
 
 .form-user-delivery{
-position: relative;
-background-color: #FFFFFF;
-width: 920px;
-padding: 72px 80px 82px;
-border: 10px solid #000000;
-margin: auto;
-
+  position: relative;
+  background-color: #FFFFFF;
+  width: 920px;
+  padding: 72px 80px 82px;
+  border: 10px solid #000000;
+  margin: auto;
 }
 
-.user{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.user-name-input{
-  padding: 20px;
-  padding-right: 45px;
-  width: 360px;
-  margin-right: 40px;
-  margin-bottom: 42px;
-  background-color: #F0F0F0;
-  border: none;
-}
-
-.add-name{
-  padding: 0;
-  margin: 0 ;
-  display: inline-block;
-}
-
-.modal-close-button{
+.modal-close-button {
   position: absolute;
   padding: 0;
-  top:84px;
+  top: 84px;
   right: 80px;
   width: 26px;
   height: 26px;
@@ -2183,7 +2165,8 @@ margin: auto;
   outline: 2px solid #AF4FFF;
 }
 
-.modal-title{
+
+.modal-title {
   font-family: "Raleway", sans-serif;
   margin: 0;
   margin-bottom: 42px;
@@ -2195,6 +2178,58 @@ margin: auto;
   position: relative;
 }
 
+.modal-title::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 12px;
+  top: 147px;
+  right: 50px;
+}
+
+.user {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.user-name-input{
+  padding: 20px;
+  padding-right: 45px;
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 42px;
+  background-color: #F0F0F0;
+  border: none;
+}
+
+.user-name-input:hover {
+  background-color: #DCDCDC;
+}
+
+.user-name-input:active {
+  background-color: #EBEBEB;
+}
+
+.user-name-input:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.user-name::placeholder {
+  color: #AF4FFF;
+}
+
+.user-name,
+.user-delivery,
+.user-title-all {
+  font-weight: 700;
+  letter-spacing: 20%;
+  display: block;
+  margin-bottom: 14px;
+}
+
+
 .user-mail-input{
   padding: 20px;
   padding-right: 45px;
@@ -2203,26 +2238,43 @@ margin: auto;
   border: none;
   outline: 2px solid #FF3D3D;
   position: relative;
-}
-
-.user-name-input,
-.user-mail-input,
-.user-delivery-input{
-  margin-top: 14px;
-}
-
-
-.modal-title::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 15px;
-  height: 12px;
-  top:147px;
-  right: 50px;
-  z-index: 2;
   background-image: url("../images/main/svg/message.svg");
+  background-repeat: no-repeat;
+  background-position: 94% 50%;
 }
+
+.user-mail-input:hover {
+background-color: #DCDCDC;
+}
+
+.user-mail-input:active {
+  background-color: #EBEBEB;
+}
+
+.user-mail-input:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+
+.user-delivery-input:hover {
+  background-color: #DCDCDC;
+}
+
+.user-delivery-input:active {
+  background-color: #EBEBEB;
+}
+
+.user-delivery-input:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+
+.user-mail-error{
+  display: inline-block;
+  font-size: 14px;
+  color: #FF3D3D;
+}
+
 
 .user-delivery-input{
   padding: 20px;
@@ -2291,6 +2343,7 @@ margin: 0;
   position: relative;
 }
 
+
 .button-minus:before {
   position: absolute;
   content: "";
@@ -2315,20 +2368,6 @@ margin: 0;
   top:23px;
 }
 
-
-.user-name::placeholder {
-color: #AF4FFF;
-opacity: 1;
-}
-
-.user-name,
-.user-delivery,
-.user-title-all{
-  font-weight: 700;
-  letter-spacing: 20%;
-}
-
-
 .button-modal-delivery {
   display: flex;
   position: relative;
@@ -2344,7 +2383,7 @@ opacity: 1;
   text-transform: uppercase;
   border:none;
   background-color: #ffffff;
-  letter-spacing: 20%;
+  letter-spacing: 2px;
 }
 
 .button-modal-delivery::before {
