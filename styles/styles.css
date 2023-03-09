@@ -183,20 +183,38 @@ body {
   width: 606px;
   align-items: center;
   min-height: 30px;
-  justify-content: flex-end;
 }
 
+.navigation-item-login{
+  margin-right: auto;
+  display: flex;
+  align-items: center;
 
-.navigation-link-header {
-  border-bottom: 2px solid #08000000;
 }
 
-.navigation-link-header:hover {
+.navigation-link-header:hover{
   opacity: 60%;
+}
+
+.navigation-link-header::before{
+  opacity: 60%;
+}
+
+.navigation-link-header.navigation-link.link {
+  border: 2px solid #08000000;
+}
+
+.navigation-link-header.navigation-link.link:hover {
+  opacity: 60%;
+  border: 2px solid #08000000;
 }
 
 .navigation-link-header:active {
   opacity: 30%;
+}
+
+.navigation-link-header.navigation-link.link:active{
+  border-bottom: 2px solid #000000;
 }
 
 .navigation-link-header.navigation-link.link:focus {
@@ -211,35 +229,23 @@ body {
 
 .login {
   position: relative;
-  margin-right: 176px;
+  margin-right: auto;
   min-height: 30px;
   display: flex;
   align-items: center;
   padding-left: 27px;
+  gap:13px;
 }
 
-.login::before {
-  content: "";
-  display: block;
-  width: 13px;
-  height: 12px;
-  background-color: #FFE17F;
-  background-image: url("../images/header/man.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  position: absolute;
-  top: 9px;
-  bottom: 9px;
-  left: 0;
-}
 
 .login-user {
   margin-right: 28px;
 }
 
 .login-go {
-  margin-right: 26px;
+  margin-right: 50px;
   opacity: 30%;
+  display: block;
 }
 
 .comparison {
@@ -360,7 +366,6 @@ body {
   outline-offset: -19px;
 }
 
-
 .produkt-basket-title {
   padding: 0;
   margin: 0;
@@ -438,7 +443,6 @@ body {
 
 .link {
   letter-spacing: 0.2em;
-  border: none;
   height: 20px;
 }
 
@@ -1128,6 +1132,27 @@ outline: 2px solid #AF4FFF;
   align-items: center;
 }
 
+.rare:hover::before{
+  background-color: #FFC700;
+}
+
+.rare:hover::after{
+  color: #000000;
+}
+
+
+.rare:active::before,
+.rare:active::after {
+  opacity: 30%;
+}
+
+
+.container-delivery:focus-within{
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+
+}
+
 .rare {
   width: 1160px;
   background-color: #F0F0F0;
@@ -1429,7 +1454,7 @@ outline: 2px solid #AF4FFF;
 .logo-footer {
   margin: 0;
   display: inline-block;
-  align-items: center;
+
 }
 
 .logo-footer:hover {
@@ -1462,6 +1487,26 @@ outline: 2px solid #AF4FFF;
   grid-column: 2/3;
 }
 
+.link-footer{
+  border: 2px solid rgba(255, 199, 0, 0,1);
+}
+
+.link-footer:hover {
+  border-bottom: 2px solid rgba(255, 199, 0, 1);
+  color: #FFC700;
+}
+
+.link-footer:active {
+  opacity: 30%;
+}
+
+.link-footer:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 3px;
+}
+
+
+
 
 .socials {
   display: flex;
@@ -1486,8 +1531,8 @@ outline: 2px solid #AF4FFF;
 }
 
 .telegram:active::before {
-  background-color: #FFC700;
-  opacity: 30%;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 199, 0, 1);
   border-radius: 50%;
 }
 
@@ -1519,9 +1564,10 @@ outline: 2px solid #AF4FFF;
   border-radius: 50%;
 }
 
-.youtube:focus {
+.youtube:focus-visible {
   background-color: #383011;
-  border-radius: 50%;
+
+
 }
 
 .youtube::before {
@@ -1573,12 +1619,40 @@ outline: 2px solid #AF4FFF;
   justify-self: end;
 }
 
+.phone:hover {
+  color: rgba(255, 199, 0, 1);
+}
+
+.phone:active {
+  opacity: 30%;
+
+}
+
+.phone:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+
+
+
 .htmlacademy-link {
   margin: 0;
   grid-column: 3/4;
   justify-self: end;
 }
 
+.htmlacademy-link:hover {
+color: #FFFFFF;
+}
+
+.thtmlacademy-link:active {
+  color:rgba(255, 255, 255, 1);
+
+}
+
+.htmlacademy-link:focus {
+
+}
 
 
 
@@ -1914,6 +1988,7 @@ font-size: 16px;
   width: 210px;
   height: 40px;
   cursor: pointer;
+  border: none;
   z-index: 1;
 
 }
@@ -2050,12 +2125,81 @@ select:focus-visible {
   gap: 40px;
 }
 
+
 .product-card-link {
   display: grid;
   grid-template-columns: 260px 100px;
   grid-template-rows: 380px 40px;
   row-gap: 32px;
+  position: relative;
 }
+
+
+.product-card-link::before{
+  position: absolute;
+  background-image: url("../images/main/svg/product-new.svg");
+  top:27px;
+  right: 27px;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.more{
+  position: absolute;
+  justify-self: center;
+  top:180px;
+  letter-spacing: 0.2em;
+  z-index: 1;
+  display: none;
+}
+
+
+.more::after{
+  position: absolute;
+  content: "";
+  background-color: #FFE17F;
+  width: 220px;
+  height: 8px;
+  top: 7px;
+  right: -35px;
+  z-index: -1;
+  display: none;
+}
+
+.product-card:hover{
+  opacity: 80%;
+}
+
+.product-card-link:hover .more::after{
+  display: block;
+}
+
+.product-card-link:hover .more{
+  display: block;
+}
+
+.product-card-link:active{
+  opacity: 80%;
+}
+
+.product-card-link:active .more::after{
+  display: block;
+  background-color: #FFC700;
+}
+
+.product-card-link:active .more{
+  display: block;
+  }
+
+  .product-card-link:focus-visible{
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+  }
+
+
+
 
 .product {
   grid-column: 1/3;
@@ -2106,6 +2250,22 @@ select:focus-visible {
   max-height: 55px;
 }
 
+.load:hover {
+border: solid 3px #000000;
+}
+
+.load:active {
+  opacity: 30%;
+}
+
+.load:focus-within {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+  .load:disabled{
+  border-color: 3px solid #E5E5E5;
+}
+
 .pages {
   display: flex;
   align-items: center;
@@ -2118,6 +2278,25 @@ select:focus-visible {
 
 .link-button {
   padding: 25px 25px;
+}
+
+.link-button:hover{
+background-color: #DCDCDC;
+}
+
+.link-button:active {
+  background-color: #DCDCDC;
+  opacity: 30%;
+}
+
+.link-button:focus-visible{
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.link-button:disabled {
+  background-color: #EBEBEB;
+  opacity: 30%;
 }
 
 .no-active {
@@ -2140,6 +2319,25 @@ select:focus-visible {
 .pagination-item {
   min-width: 40px;
 }
+
+.pagination-item:hover {
+color: #444444;
+}
+
+.pagination-item:active {
+  opacity: 10%;
+}
+
+.pagination-item:focus-within {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.pagination-item:disabled {
+
+  opacity: 30%;
+}
+
 
 .pagination {
   display: flex;
