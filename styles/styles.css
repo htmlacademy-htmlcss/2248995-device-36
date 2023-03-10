@@ -1162,8 +1162,12 @@ subcatalog-link:focus-visible{
   background-color: #FFC700;
 }
 
+.rare:after{
+  opacity: 30%;
+}
+
 .rare:hover::after{
-  color: #000000;
+  opacity: 99%;
 }
 
 
@@ -1293,8 +1297,21 @@ subcatalog-link:focus-visible{
   font-weight: 700px;
   font-size: 18px;
   line-height: 20px;
-  list-style: disc;
+  list-style: none;
   margin-bottom: 19px;
+  position: relative;
+}
+
+.navigation-item.subject:before{
+  position: absolute;
+  content: "";
+  display: block;
+  width:8px;
+  height: 8px;
+  background-color: #FFC700;
+  top:5px;
+  left:-34px;
+  border-radius: 50px;
 }
 
 .about-us {
@@ -1443,6 +1460,8 @@ subcatalog-link:focus-visible{
   padding-left: 16px;
   display: flex;
   align-self: stretch;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .submit {
@@ -1519,12 +1538,9 @@ subcatalog-link:focus-visible{
   width: 1160px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 300px 500px 215px;
+  grid-template-columns: 291px 440px 288px;
   column-gap: 70px;
-  row-gap: 35px;
-}
-
-.footer-container {
+  row-gap: 28px;
   position: relative;
 }
 
@@ -1563,12 +1579,13 @@ subcatalog-link:focus-visible{
   line-height: 20px;
   margin: 0;
   grid-column: 1/2;
+  margin-top: -1px;
 }
 
 .footer-navigation {
   display: flex;
   justify-self: center;
-  gap: 35px;
+  gap: 32px;
   padding: 0;
   margin: 0;
   grid-column: 2/3;
@@ -1602,7 +1619,10 @@ subcatalog-link:focus-visible{
   gap: 15px;
   grid-column: 2/3;
   align-items: start;
+  margin-top: 15px;
 }
+
+
 
 .telegram {
   color: #000000;
@@ -1648,9 +1668,7 @@ subcatalog-link:focus-visible{
 .telegram:focus-visible,
 .youtube:focus-visible,
 .twitter:focus-visible {
-  outline: 2px solid #AF4FFF;
-
-
+  outline: 2px solid #AF4FFF
 }
 
 .youtube::before {
@@ -1695,6 +1713,7 @@ subcatalog-link:focus-visible{
   grid-column: 3/4;
   grid-row: 2/3;
   justify-self: end;
+  margin-top: 4px;
 }
 
 .phone:hover {
@@ -1715,6 +1734,8 @@ subcatalog-link:focus-visible{
   margin: 0;
   grid-column: 3/4;
   justify-self: end;
+  align-self: flex-end;
+  margin-top: 20px;
 }
 
 
