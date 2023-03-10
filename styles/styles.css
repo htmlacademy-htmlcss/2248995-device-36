@@ -1000,7 +1000,7 @@ subcatalog-link:focus-visible{
 .service-container-wrapper {
   padding: 0;
   margin: 0;
-  margin-right: 120px;
+  margin-right: 118px;
   padding-top: 64px;
   position: relative;
   letter-spacing: 0.2em;
@@ -1024,7 +1024,7 @@ subcatalog-link:focus-visible{
 }
 
 .link-active {
-  width: 265px;
+  width: 267px;
   color: #FFE17F;
   background-color: #000000;
   align-items: center;
@@ -1177,10 +1177,9 @@ subcatalog-link:focus-visible{
 }
 
 
-.container-delivery:focus-within{
+.navigation-link-rare:focus-visible{
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
-
 }
 
 .rare {
@@ -1219,7 +1218,7 @@ subcatalog-link:focus-visible{
   background-color: rgba(220, 220, 220, 0.5);
   background-image: url("../images/main/svg/frame.svg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 44% 48%;
   right: 42px;
   border-radius: 50%;
 }
