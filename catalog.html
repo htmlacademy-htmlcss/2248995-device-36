@@ -19,12 +19,15 @@
       <div class="navigation-container">
         <div class="form-navigation">
           <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="get">
-            <label class="search">
+            <div class="search">
               <span class="no-visually">Поиск по сайту</span>
               <input class="search-input" autocomplete="off" type="text" required placeholder="Поиск по сайту">
               <span></span>
-            </label>
-            <button class="search-submit" type="submit" value="Найти">Найти</button>
+            </div>
+            <div class="button-search">
+              <button class="search-submit" type="submit" value="Найти">Найти</button>
+              <span></span>
+            </div>
           </form>
           <div class="navigation-user">
             <span class="navigation-list navigation-item-login no-visually">
@@ -43,7 +46,6 @@
             <a class="navigation-link login-go navigation-link-header" href="#">Выйти</a>
           </span>
           </div>
-
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link comparison navigation-link-header" href="#">Сравнить</a>
@@ -55,19 +57,19 @@
                   <ol class="produkt-basket">
                     <li class="produkt-basket-item produkt-1">
                       <a class="produkt-basket-link" href="#">
-                        <img src="images/header/product-1-small .png" alt="Любительская селфи-палка." width="39" height="43">
+                        <img src="images/header/produkt-1-small.png" alt="Любительская селфи-палка." width="39" height="43">
                         <p class="produkt-basket-title">Любительская <br> селфи-палка</p>
-                        </li>
                       </a>
+                    </li>
                     <li class="produkt-basket-item produkt-2">
                       <a class="produkt-basket-link" href="#">
-                        <img foto-2 src="images/header/product-2-small .png" alt="Профессиональная селфи-палка" width="39" height="43">
+                        <img foto-2 src="images/header/produkt-2-small.png" alt="Профессиональная селфи-палка" width="39" height="43">
                         <p class="produkt-basket-title">Профессиональная <br> селфи-палка</p>
                       </a>
                     </li>
                     <div class="produkt-all-basket">
-                      <p class="produkt-basket-title">Товаров: 2</p>
-                      <p class="produkt-basket-title">Сумма: 2000P</p>
+                      <span class="produkt-basket-title">Товаров: 2</span>
+                      <span class="produkt-basket-title">Сумма: 2000P</span>
                     </div>
                     <button class="open-basket" type="button">Открыть корзину</button>
                   </ol>
