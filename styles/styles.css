@@ -135,19 +135,22 @@ body {
   line-height: 20px;
   border: 2px solid #000000;
   outline: none;
+  position: relative;
+
 }
 
 .search-input:focus-visible + span{
+  position: absolute;
   display: block;
+  content: "";
   width: 305px;
   height: 15px;
   background-color: 2px salid #AF4FFF;
+  top:0;
+  left:0;
+  
 }
 
-.search:focus-wit{
-  outline: 2px solid #AF4FFF;
-  outline-offset: 1px;
-}
 
 .search:disabled {
   opacity: 0;
