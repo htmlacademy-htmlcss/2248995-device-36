@@ -12,20 +12,23 @@
   <body>
     <header class="page-header page-header-catalog">
       <h1 class="visually-hidden" id="index">Магазин "Девайс"</h1>
-      <a href="index.html">
-        <img class="logo logo-header" src="images/header/logo.svg" width="145" height="36"
+      <a class="logo-header" href="index.html">
+        <img src="images/header/logo.svg" width="145" height="36"
           alt="Логотип Магазина Девайс.">
       </a>
       <div class="navigation-container">
         <div class="form-navigation">
           <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="get">
-            <label class="visually-hidden search" for="search">Поиск по сайту</label>
-            <input class="search" type="text" required placeholder="Поиск по сайту" id="search">
+            <label class="search">
+              <span class="no-visually">Поиск по сайту</span>
+              <input class="search-input" autocomplete="off" type="text" required placeholder="Поиск по сайту">
+              <span></span>
+            </label>
             <button class="search-submit" type="submit" value="Найти">Найти</button>
           </form>
           <div class="navigation-user">
-            <span class="navigation-list navigation-item-login visually-hidden">
-              <a class="navigation-link navigation-link-header login" href="#">
+            <span class="navigation-list navigation-item-login no-visually">
+              <a class="login" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" fill="none">
                   <path fill="black" d="M0 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6
                                 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0A3.5 3.5 0 0 0 3 3.5c0 1.3.7
@@ -34,7 +37,7 @@
               </a>
             </span class="navigation-item-login">
             <span class="navigation-item navigation-list">
-              <a class="navigation-link login-user" href="#">Коля Петухов</a>
+              <a class="navigation-link navigation-link-header login-user" href="#">Коля Петухов</a>
             </span>
           <span class="navigation-item navigation-list">
             <a class="navigation-link login-go navigation-link-header" href="#">Выйти</a>
@@ -51,12 +54,16 @@
                 <div class="popover-content">
                   <ol class="produkt-basket">
                     <li class="produkt-basket-item produkt-1">
-                      <img src="images/header/product-1-small .png" alt="Любительская селфи-палка." width="39" height="43">
-                      <p class="produkt-basket-title">Любительская <br> селфи-палка</p>
-                    </li>
+                      <a class="produkt-basket-link" href="#">
+                        <img src="images/header/product-1-small .png" alt="Любительская селфи-палка." width="39" height="43">
+                        <p class="produkt-basket-title">Любительская <br> селфи-палка</p>
+                        </li>
+                      </a>
                     <li class="produkt-basket-item produkt-2">
-                      <img foto-2 src="images/header/product-2-small .png" alt="Профессиональная селфи-палка" width="39" height="43">
-                      <p class="produkt-basket-title">Профессиональная <br> селфи-палка</p>
+                      <a class="produkt-basket-link" href="#">
+                        <img foto-2 src="images/header/product-2-small .png" alt="Профессиональная селфи-палка" width="39" height="43">
+                        <p class="produkt-basket-title">Профессиональная <br> селфи-палка</p>
+                      </a>
                     </li>
                     <div class="produkt-all-basket">
                       <p class="produkt-basket-title">Товаров: 2</p>
