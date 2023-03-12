@@ -500,6 +500,7 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
   cursor: pointer;
+  outline: none ;
 }
 
 navigation-item-catalog:active .subcatalog {
@@ -518,6 +519,24 @@ navigation-item-catalog:active .subcatalog {
   right: 0;
   top: 0;
   opacity: 30%;
+}
+
+.navigation-catalog::after{
+  display:none;
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 50px;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.navigation-catalog:focus-visible:after {
+  display: block;
+  content: "";
+  width: 300px;
+  height: 50px;
+  outline-offset: 2px;
 }
 
 .navigation-catalog:hover::before {
@@ -562,10 +581,6 @@ navigation-item-catalog:active .subcatalog {
   display: block;
 }
 
-.navigation-catalog:focus-visible {
-outline: 2px solid #AF4FFF;
-}
-
 .subcatalog {
   list-style: none;
   text-decoration: none;
@@ -574,7 +589,7 @@ outline: 2px solid #AF4FFF;
   z-index: 2;
   display: none;
   position: absolute;
-  top: 53px;
+  top: 55px;
   left: -60px;
   padding: 33px 20px 27px;
   min-height: 150px;
@@ -1043,9 +1058,17 @@ outline: 2px solid #AF4FFF;
   margin: 0 auto;
   align-items: center;
   margin-bottom: 117px;
+  outline: none;
 }
 
+.link-rare{
+  outline: none;
+}
 
+.link-rare:focus-visible{
+  outline: none;
+  outline: 2px solid #AF4FFF;
+}
 
 
 
@@ -1112,6 +1135,8 @@ outline: 2px solid #AF4FFF;
 
 .link-active:focus-visible {
   outline: 2px solid #AF4FFF;
+  width: 220px;
+  padding-left: 65px;
 }
 
 .link-no-active {
@@ -1714,14 +1739,15 @@ outline: 2px solid #AF4FFF;
   align-items: center;
   justify-content: center;
   position: relative;
+  outline: none;
 }
 
 .telegram::after{
   position: absolute;
   display: none;
   content: "";
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   outline: 2px solid #AF4FFF;
   border-radius: 0%;
 }
@@ -1759,6 +1785,7 @@ outline: 2px solid #AF4FFF;
   opacity: 60%;
   align-items: center;
   justify-content: center;
+  outline: none;
 }
 
 .youtube::after {
@@ -1803,14 +1830,15 @@ outline: 2px solid #AF4FFF;
   opacity: 60%;
   align-items: center;
   justify-content: center;
+  outline: none;
 }
 
 .twitter::after {
   position: absolute;
   display: none;
   content: "";
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   outline: 2px solid #AF4FFF;
   border-radius: 0%;
 }
@@ -2024,7 +2052,7 @@ img {
   height: 2px;
   position: relative;
   background-color: #DCDCDC;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
 }
 
 .range-bar{
@@ -2097,8 +2125,10 @@ font-size: 16px;
 .catalog-filter-label{
   display: flex;
   opacity: 30%;
-  font-size: 10px;
+  font-size: 14px;
   width: 107px;
+  line-height: 20px;
+  align-items: flex-end;
 }
 
 
@@ -2115,7 +2145,7 @@ font-size: 16px;
 }
 
 .catalog-filter-title-color{
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .catalog-filter-title::before {
@@ -2912,9 +2942,11 @@ background-color: #DCDCDC;
 }
 
 
-.user-button-all{
+
+.user-all-button {
   display: flex;
-  position: relative;
+  height: 60px;
+  margin-top: 14px;
 }
 
 .button-plus,
@@ -2925,43 +2957,21 @@ background-color: #DCDCDC;
   border: none;
 }
 
-.button-number{
-  font-size: 16px;
-  padding: 20px;
-  width: 18px;
-  justify-self: center;
-  background-color: #F0F0F0;
-  border: none;
-}
-
-.button-number::-webkit-outer-spin-button,
-.button-number::-webkit-inner-spin-button {
-appearance: none;
-margin: 0;
-}
-
-.user-all{
-  display: flex;
-  height: 60px;
-  margin-top: 14px;
-}
-
-.user-all-button-minus{
+.button-minus{
   position: relative;
 }
 
-.button-minus:before {
+.button-minus:after {
   position: absolute;
   content: "";
   background-image: url("../images/main/svg/button-minus.svg");
   width: 16px;
-  height: 3px;
+  height: 2px;
   right: 21px;
 }
 
-.user-all-button-plus {
+.button-plus {
   position: relative;
-  border: none;
 }
 
 .button-plus::before {
@@ -2971,7 +2981,52 @@ margin: 0;
   width: 16px;
   height: 16px;
   right: 21px;
-  top:23px;
+  top: 23px;
+}
+
+.button-plus:hover {
+  opacity: 60%;
+}
+
+.button-plus:active {
+  opacity: 30%;
+}
+
+.button-plus:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.button-minus:hover {
+  opacity: 60%;
+}
+
+.button-minus:active {
+  opacity: 30%;
+}
+
+.button-minus:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.button-number{
+  font-size: 16px;
+  padding: 20px;
+  width: 18px;
+  background-color: #F0F0F0;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-number:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.button-number::-webkit-outer-spin-button,
+.button-number::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .button-modal-delivery {
