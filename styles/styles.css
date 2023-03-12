@@ -900,22 +900,22 @@ outline: 2px solid #AF4FFF;
   margin: 0 11px;
 }
 
-.slider-pagination-link:hover + span{
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  border: 2px solid #AF4FFF;
-  top: -3px;
-  left: -2px;
-  bottom: -2px;
-  right: -3px;
-  background-color: 2px solid #AF4FFF;
-  pointer-events: none;
+.slider-pagination-link:active {
+  opacity: 60%;
 }
-
 
 .slider-pagination-link:active {
   opacity: 30%;
+}
+
+.slider-pagination-link:focus-visible {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 14px;
+  left: -2px;
+  border-radius: 0%;
+  outline: 2px solid #AF4FFF;
 }
 
 .gadjets {
@@ -1530,6 +1530,18 @@ outline: 2px solid #AF4FFF;
   line-height: 30px;
 }
 
+.user-email:hover{
+
+}
+
+.user-email:active {
+
+}
+
+.user-email:focus-visible {
+
+}
+
 .submit {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -1548,18 +1560,19 @@ outline: 2px solid #AF4FFF;
 
 .submit:hover {
   background-color: #000000;
-  color: #F0F0F0;
+  color: #FFFFFF;
   border: none;
 }
 
 .submit:active {
   background-color: #000000;
-  color: #FFFFFF;
-  ;
+  color: rgba(220, 220, 220, 0.3);
 }
 
 .submit:focus-visible {
-  outline: #C4C4C4;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  border:3px solid #C4C4C4;
   color: #000000;
   background-color: #f0f0f0;
 }
@@ -1688,86 +1701,138 @@ outline: 2px solid #AF4FFF;
   margin-top: 15px;
 }
 
-
-
 .telegram {
   color: #000000;
   text-decoration: none;
-  position: relative;
-  display: block;
+  display: flex;
   width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  fill: #444444;
+  opacity: 60%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.telegram:hover::before {
+.telegram::after{
+  position: absolute;
+  display: none;
+  content: "";
+  width: 44px;
+  height: 44px;
+  outline: 2px solid #AF4FFF;
+  border-radius: 0%;
+}
+
+.telegram:focus-visible::after {
+  width: 40px;
+  height: 40px;
+  border-radius: 0%;
+  display: block;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 3px;
+}
+
+.telegram:hover {
   background-color: #FFC700;
-  border-radius: 50%;
+  opacity: 99%;
 }
 
-.telegram:active::before {
-  color: rgba(0, 0, 0, 0.3);
+.telegram:active{
+  fill: rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 199, 0, 1);
   border-radius: 50%;
 }
 
-.telegram::before {
-  content: "";
-  display: block;
+
+.youtube {
+  color: #000000;
+  text-decoration: none;
+  display: flex;
   width: 40px;
   height: 40px;
+  border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.3);
-  background-image: url("../images/footer/telegram.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  border-radius: 50%;
+  fill: #444444;
+  opacity: 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube::after {
+  position: absolute;
+  display: none;
+  content: "";
+  width: 40px;
+  height: 40px;
+  outline: 2px solid #AF4FFF;
+  border-radius: 0%;
+}
+
+.youtube:focus::after {
+  width: 40px;
+  height: 40px;
+  border-radius: 0%;
+  display: block;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 3px;
 }
 
 .youtube:hover {
   background-color: #FFC700;
-  border-radius: 50%;
+  opacity: 99%;
 }
 
 .youtube:active {
-  background-color: #FFC700;
+  fill: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 199, 0, 1);
   border-radius: 50%;
 }
 
-.telegram:focus-visible,
-.youtube:focus-visible,
-.twitter:focus-visible {
-  outline: 2px solid #AF4FFF
-}
-
-.youtube::before {
-  content: "";
-  display: block;
+.twitter {
+  color: #000000;
+  text-decoration: none;
+  display: flex;
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.3);
-  background-image: url("../images/footer/youtube.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  fill: #444444;
+  opacity: 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+.twitter::after {
+  position: absolute;
+  display: none;
+  content: "";
+  width: 44px;
+  height: 44px;
+  outline: 2px solid #AF4FFF;
+  border-radius: 0%;
+}
+
+.twitter:focus-visible::after {
+  width: 40px;
+  height: 40px;
+  border-radius: 0%;
+  display: block;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 3px;
+  border: none;
 }
 
 .twitter:hover {
   background-color: #FFC700;
-  border-radius: 50%;
+  opacity: 99%;
 }
 
 .twitter:active {
-  background-color: #FFC700;
-  border-radius: 50%;
-}
-
-.twitter::before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.3);
-  background-image: url("../images/footer/twitter.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  fill: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 199, 0, 1);
   border-radius: 50%;
 }
 
@@ -2307,6 +2372,30 @@ select:focus-visible {
   margin-right: 35px;
 }
 
+.button-popular-max:hover{
+  opacity: 50%;
+}
+
+.button-popular-min:hover{
+  opacity: 50%;
+}
+
+.button-popular-max:active{
+  opacity: 100%;
+}
+
+.button-popular-min:active {
+  opacity: 100%;
+}
+
+.button-popular-max:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.button-popular-min:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
 .min-pupular,
 .max-popular {
   min-width: 30px;
@@ -2427,15 +2516,17 @@ select:focus-visible {
 .navigation-link-load {
   font-size: 16px;
   line-height: 19px;
+  display: flex;
+  width: 755px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
 }
 
 .load {
   background-color: #ffffff;
   border: solid 3px #E5E5E5;
   text-align: center;
-  padding: 18px;
-  padding-left: 40px;
-  padding-right: 40px;
   margin-left: 40px;
   margin-right: 40px;
   font-size: 16px;
@@ -2452,11 +2543,11 @@ border: solid 3px #000000;
   opacity: 30%;
 }
 
-.load:focus-within {
+.navigation-link-load:focus-visible {
   outline: 2px solid #AF4FFF;
-  outline-offset: 2px;
+  outline-offset: 4px;
 }
-  .load:disabled{
+  .navigation-link-load:disabled{
   border-color: 3px solid #E5E5E5;
 }
 
@@ -2514,15 +2605,15 @@ background-color: #DCDCDC;
   min-width: 40px;
 }
 
-.pagination-item:hover {
+.pagination-prev:hover {
 color: #444444;
 }
 
-.pagination-item:active {
+.pagination-prev:active {
   opacity: 10%;
 }
 
-.pagination-item:focus-within {
+.pagination-prev:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
