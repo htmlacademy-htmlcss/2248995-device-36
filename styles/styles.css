@@ -271,6 +271,13 @@ body {
   gap:13px;
 }
 
+.login-user{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:13px;
+}
+
 .login-go {
   opacity: 30%;
   display: block;
@@ -2585,6 +2592,21 @@ color: #444444;
   background-color: #F0F0F0;
   border: none;
 }
+
+.user-content-svg svg{
+  position: absolute;
+  top:65px;
+  right: 60px;
+  fill:#B3B3B3;
+  width: 13px;
+  height: 12px;
+}
+
+.user-content-svg{
+  position: relative;
+}
+
+
 .user-content span{
   display: inline-block;
   font-size: 14px;
@@ -2622,7 +2644,6 @@ color: #444444;
   width: 360px;
   background-color: #F0F0F0;
   border: none;
-  outline: 2px solid #FF3D3D;
   position: relative;
   background-image: url("../images/main/svg/message.svg");
   background-repeat: no-repeat;
@@ -2641,6 +2662,11 @@ background-color: #DCDCDC;
   outline: 2px solid #AF4FFF;
 }
 
+.user-mail-input:disabled {
+  outline: 2px solid red;
+}
+
+
 
 .user-delivery-input:hover {
   background-color: #DCDCDC;
@@ -2654,8 +2680,12 @@ background-color: #DCDCDC;
   outline: 2px solid #AF4FFF;
 }
 
+.user-delivery-input:disabled {
+  outline: 2px solid red;
+}
+
 .user-mail-error{
-  display: inline-block;
+  display: none;
   font-size: 14px;
   color: #FF3D3D;
 }
