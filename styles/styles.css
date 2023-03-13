@@ -469,11 +469,13 @@ body {
 
 .open-basket:hover {
   background-color: #FFE17F;
+  border-radius: 0%;
 }
 
 .open-basket:active {
   color: rgba(0, 0, 0,0.3);
   background-color:rgba(255, 225, 127, 1);
+  border-radius: 0%;
 }
 
 .open-basket:focus-visible {
