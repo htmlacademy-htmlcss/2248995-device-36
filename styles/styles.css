@@ -1555,14 +1555,17 @@ navigation-item-catalog:active .subcatalog {
 }
 
 .user-email:hover{
-
+  opacity: 60%;
 }
 
 .user-email:active {
-
+  outline: none;
 }
 
 .user-email:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  z-index: 1;
 
 }
 
@@ -1797,7 +1800,7 @@ navigation-item-catalog:active .subcatalog {
   border-radius: 0%;
 }
 
-.youtube:focus::after {
+.youtube:focus-visible::after {
   width: 40px;
   height: 40px;
   border-radius: 0%;
@@ -2689,7 +2692,7 @@ color: #444444;
 }
 
 .modal-container-close {
-  display: non;
+  display: none;
 }
 
 .modal-container{
