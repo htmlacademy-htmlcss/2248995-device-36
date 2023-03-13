@@ -1066,7 +1066,6 @@ navigation-item-catalog:active .subcatalog {
 }
 
 .link-rare:focus-visible{
-  outline: none;
   outline: 2px solid #AF4FFF;
 }
 
@@ -2484,7 +2483,11 @@ select:focus-visible {
   display: none;
 }
 
-.product-card:hover{
+.product-card-link:hover .product{
+  opacity: 80%;
+}
+
+.product-card-link:hover .product-card-title {
   opacity: 80%;
 }
 
@@ -2496,7 +2499,11 @@ select:focus-visible {
   display: block;
 }
 
-.product-card-link:active{
+.product-card-link:active .product{
+  opacity: 80%;
+}
+
+.product-card-link:active .product-card-title {
   opacity: 80%;
 }
 
@@ -2682,15 +2689,24 @@ color: #444444;
 }
 
 .modal-container-close {
-  display: none;
+  display: non;
 }
 
 .modal-container{
   position:fixed;
   width: 100%;
   height: 100%;
-  background-color: #E5E5E5;
   z-index: 1;
+}
+
+.modal-container:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #E5E5E5;
+  opacity: 90%;
 }
 
 .form-user-delivery{
@@ -2702,6 +2718,7 @@ color: #444444;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 
 }
 
@@ -2783,12 +2800,10 @@ color: #444444;
   position: relative;
 }
 
-
 .user-content span{
   display: inline-block;
   font-size: 14px;
 }
-
 
 .user-name-input:hover {
   background-color: #DCDCDC;
@@ -2804,6 +2819,18 @@ color: #444444;
 
 .user-name::placeholder {
   color: #AF4FFF;
+}
+
+.user-name-error {
+  outline: 2px solid red;
+  display: none;
+  font-size: 14px;
+  color: #FF3D3D;
+}
+
+
+.user-name-input:disabled {
+  opacity: 30%;
 }
 
 .user-name,
@@ -2839,11 +2866,13 @@ background-color: #DCDCDC;
   outline: 2px solid #AF4FFF;
 }
 
-.user-mail-input:disabled {
+.user-mail-error:invalid {
   outline: 2px solid red;
 }
 
-
+.user-mail-input:disabled {
+  opacity: 30%;
+}
 
 .user-delivery-input:hover {
   background-color: #DCDCDC;
@@ -2857,14 +2886,15 @@ background-color: #DCDCDC;
   outline: 2px solid #AF4FFF;
 }
 
-.user-delivery-input:disabled {
+.user-delivery-error:invalid {
   outline: 2px solid red;
-}
-
-.user-mail-error{
   display: none;
   font-size: 14px;
   color: #FF3D3D;
+}
+
+.user-delivery-input:disabled {
+  opacity: 30%;
 }
 
 .user-delivery-input{
@@ -2895,7 +2925,7 @@ background-color: #DCDCDC;
 
 .popover-user-delivery{
   max-width: 20px;
-  height: 20px;
+  height: 17px;
   position: relative;
   border-radius: 50px;
   margin-top: 6px;
@@ -2903,16 +2933,17 @@ background-color: #DCDCDC;
 
 .popover-user-delivery-more{
   margin: 0;
-  width: 180px;
+  width: 170px;
   background-color: #000000;
   color: #FFFFFF;
-  padding: 19px 17px 10px 19px;
+  padding: 19px 14px 10px 19px;
   position: absolute;
   z-index: 1;
   right: -33px;
   top:33px;
   text-align: start;
   display: none;
+  font-size: 16px;
 }
 
 .popover-user-delivery::after {
@@ -3013,14 +3044,13 @@ background-color: #DCDCDC;
   padding: 20px;
   width: 18px;
   background-color: #F0F0F0;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 2px solid #08000000;
+  text-align: center;
 }
 
 .button-number:focus-visible {
-  outline: 2px solid #AF4FFF;
+  border: 2px solid #AF4FFF;
+  outline: none;
 }
 
 .button-number::-webkit-outer-spin-button,
