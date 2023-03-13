@@ -892,10 +892,6 @@ navigation-item-catalog:active .subcatalog {
   text-transform: none;
 }
 
-.main-slogan-conteiner {
-  margin: 0 auto;
-  position: relative;
-}
 
 .slider-pagination {
   display: flex;
@@ -904,13 +900,16 @@ navigation-item-catalog:active .subcatalog {
   justify-content: center;
   padding: 0;
   margin: 0;
-  right: 907px;
-  bottom: 24px;
-  position: absolute;
   border: #08000000;
   z-index: 1;
+  margin-top: -86px;
+  margin-bottom: 65px;
 }
 
+.slider-pagination-item{
+display: flex;
+justify-self:center;
+}
 .slider-pagination-link {
   position: relative;
   width: 20px;
