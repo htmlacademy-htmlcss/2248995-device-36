@@ -2994,6 +2994,7 @@ background-color: #DCDCDC;
 .popover-user{
   position: relative;
 }
+
 .user-content-all{
   align-self: flex-start;
   flex-wrap: wrap;
@@ -3047,9 +3048,9 @@ background-color: #DCDCDC;
 .popover-user-delivery:hover .popover-user-delivery-more {
   display: block;
 }
-
-
-
+.user-all{
+  display: flex;
+}
 .user-all-button {
   display: flex;
   height: 60px;
@@ -3119,9 +3120,11 @@ background-color: #DCDCDC;
   font-size: 16px;
   padding: 20px;
   width: 18px;
+  padding-bottom: 21px;
   background-color: #F0F0F0;
   border: 2px solid #08000000;
   text-align: center;
+  height: 16px;
 }
 
 .button-number:focus-visible {
