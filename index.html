@@ -54,16 +54,22 @@
               <div class="popover-basket">
                 <div class="popover-content">
                   <ol class="produkt-basket">
-                    <li class="produkt-basket-item produkt-1">
+                    <li class="produkt-basket-item ">
                       <a class="produkt-basket-link" href="#">
                         <img class="produkt-11" src="images/header/produkt-1-small.png" alt="Любительская селфи-палка." width="39" height="43">
                         <p class="produkt-basket-title">Любительская <br> селфи-палка</p>
+                      <button class="delete-produkt-up">
+                        <span class="visually-hidden">Удалить товар</span>
+                      </button>
                       </a>
                     </li>
-                    <li class="produkt-basket-item produkt-2">
+                    <li class="produkt-basket-item ">
                       <a class="produkt-basket-link" href="#">
                         <img foto-2 src="images/header/produkt-2-small.png" alt="Профессиональная селфи-палка." width="39" height="43">
                         <p class="produkt-basket-title">Профессиональная <br> селфи-палка</p>
+                      <button class="delete-produkt">
+                        <span class="visually-hidden">Удалить товар</span>
+                      </button>
                       </a>
                     </li>
                     <div class="produkt-all-basket">
@@ -126,64 +132,80 @@
 
     <main class="main-index">
       <div class="main-container">
-        <section class="slider-slogan-container">
-          <div class="slider-container">
-            <img class="slider-image" src="images/main/png/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Кнопка назад</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Кнопка вперед</span>
-            </button>
-            <img class="slider-number" src="images/main/svg/01.svg" width="250" height="135" alt="Слайдер номер 01.">
-            <ol class="slider-pagination">
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-link link-1">
+        <div class="main-slogan-conteiner">
+          <section class="slider-slogan-container">
+            <div class="slider-container">
+              <img class="slider-image" src="images/main/png/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Кнопка назад</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Кнопка вперед</span>
+              </button>
+              <img class="slider-number" src="images/main/svg/01.svg" width="250" height="135" alt="Слайдер номер 01.">
+            </div>
+            <div class="slogan-conteiner">
+              <p class="slogan">Порхает как бабочка, жалит как пчела!</p>
+              <p class="slogan-desc">
+                Этот обычный, на первый взгляд,
+                квадрокоптер оснащен мощным лазером,
+                замаскированным под стандартную камеру.
+              </p>
+              <a class="navigation-link link link-slogan" href="#">Подробнее</a>
+              <dl class="table">
+                <dt class="product-value-800">800 м</dt>
+                <dd class="product-desc-800">Дальность полета</dd>
+                <dt class="product-value-50">50 м</dt>
+                <dd class="product-desc-50">Радиус поражения</dd>
+              </dl>
+            </div>
+          </section>
+          <section class="slider-slogan-container slider-slogan-no-active">
+            <div class="slider-container">
+              <img class="slider" src="images/main/png/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden ">Кнопка назад</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden ">Кнопка вперед</span>
+              </button>
+              <img class="slider-number" src="images/main/svg/02.svg" width="250" height="135" alt="Слайдер номер 02.">
+              <ol class="slider-pagination">
+                <li class="slider-pagination-item">
                   <span class="visually-hidden">Слайдер-1</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-link">
+                </li>
+                <li class="slider-pagination-item">
                   <span class="visually-hidden">Слайдер-2</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-link ">
+                </li>
+                <li class="slider-pagination-item">
                   <span class="visually-hidden">Слайдер-3</span>
-                </button>
-              </li>
-            </ol>
-          </div>
-
-          <div class="slogan-conteiner">
-            <p class="slogan">Порхает как бабочка, жалит как пчела!</p>
-            <p class="slogan-desc">
-              Этот обычный, на первый взгляд,
-              квадрокоптер оснащен мощным лазером,
-              замаскированным под стандартную камеру.
-            </p>
-            <a class="navigation-link link link-slogan" href="#">Подробнее</a>
-            <dl class="table">
-              <dt class="product-value-800">800 м</dt>
-              <dd class="product-desc-800">Дальность полета</dd>
-              <dt class="product-value-50">50 м</dt>
-              <dd class="product-desc-50">Радиус поражения</dd>
-            </dl>
-          </div>
-        </section>
-
-
-        <section class="slider-slogan-container visually-hidden no-visually">
-          <div class="slider-container">
-            <img class="slider" src="images/main/png/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden ">Кнопка назад</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden ">Кнопка вперед</span>
-            </button>
-            <img class="slider-number" src="images/main/svg/02.svg" width="250" height="135" alt="Слайдер номер 02.">
-            <ol class="slider-pagination">
+                </li>
+              </ol>
+            </div>
+            <div class="slogan-conteiner">
+              <p class="slogan">Худеем правильно!</p>
+              <p class="slogan-desc">
+                Мотивирующие фитнес-браслеты помогут найти в себе силы
+                не пропускать занятия и соблюдать диету.
+              </p>
+              <a class="navigation-link link link-slogan" href="#">Подробнее</a>
+              <dl class="table">
+                <dt class="product-value-48">48 часов</dt>
+                <dd class="product-desc-48">Без подзарядки</dd>
+              </dl>
+            </div>
+          </section>
+          <section class="slider-slogan-container slider-slogan-no-active">
+            <div class="slider-container">
+              <img class="slider" src="images/main/png/slider-3.png" width="560" height="560" alt="Палка для селфи.">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden ">Кнопка назад</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden ">Кнопка вперед</span>
+              </button>
+              <img class="slider-number" src="images/main/svg/03.svg" width="250" height="135" alt="Слайдер номер 03."">
+                      <ol class=" slider-pagination">
               <li class="slider-pagination-item">
                 <span class="visually-hidden">Слайдер-1</span>
               </li>
@@ -193,63 +215,44 @@
               <li class="slider-pagination-item">
                 <span class="visually-hidden">Слайдер-3</span>
               </li>
-            </ol>
-          </div>
-          <div class="slogan-conteiner">
-            <p class="slogan">Худеем правильно!</p>
-            <p class="slogan-desc">
-              Мотивирующие фитнес-браслеты помогут найти в себе силы
-              не пропускать занятия и соблюдать диету.
-            </p>
-            <a class="navigation-link link link-slogan" href="#">Подробнее</a>
-            <dl class="table">
-              <dt class="product-value-48">48 часов</dt>
-              <dd class="product-desc-48">Без подзарядки</dd>
-            </dl>
-          </div>
-        </section>
+              </ol>
+            </div>
 
-        <section class="slider-slogan-container visually-hidden no-visually">
-          <div class="slider-container">
-            <img class="slider" src="images/main/png/slider-3.png" width="560" height="560" alt="Палка для селфи.">
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden ">Кнопка назад</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden ">Кнопка вперед</span>
-            </button>
-            <img class="slider-number" src="images/main/svg/03.svg" width="250" height="135" alt="Слайдер номер 03."">
-            <ol class="slider-pagination">
-              <li class="slider-pagination-item">
+            <div class="slogan-conteiner">
+              <p class="slogan">Делай селфи,как Бен Стиллер!</p>
+              <p class="slogan-desc">
+                Самая длинная палка для селфи доступна в нашем магазине.
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+              </p>
+              <a class="navigation-link link link-slogan" href="#">Подробнее</a>
+              <dl class="table">
+                <dt class="product-value-8">8,5 м</dt>
+                <dd class="product-desc-8">Длина палки</dd>
+                <dt class="product-value-5">5 кг</dt>
+                <dd class="product-desc-5">Вес палки</dd>
+                <dt class="product-value-karbon">Карбон</dt>
+                <dd class="product-desc-karbon">Материал</dd>
+              </dl>
+            </div>
+          </section>
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-link link-slogan-active">
                 <span class="visually-hidden">Слайдер-1</span>
-              </li>
-              <li class="slider-pagination-item">
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-link">
                 <span class="visually-hidden">Слайдер-2</span>
-              </li>
-              <li class="slider-pagination-item">
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-link ">
                 <span class="visually-hidden">Слайдер-3</span>
-              </li>
-            </ol>
-          </div>
-
-          <div class="slogan-conteiner">
-            <p class="slogan">Делай селфи,как Бен Стиллер!</p>
-            <p class="slogan-desc">
-              Самая длинная палка для селфи доступна в нашем магазине.
-              Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
-            </p>
-            <a class="navigation-link link link-slogan" href="#">Подробнее</a>
-            <dl class="table">
-              <dt class="product-value-8">8,5 м</dt>
-              <dd class="product-desc-8">Длина палки</dd>
-              <dt class="product-value-5">5 кг</dt>
-              <dd class="product-desc-5">Вес палки</dd>
-              <dt class="product-value-karbon">Карбон</dt>
-              <dd class="product-desc-karbon">Материал</dd>
-            </dl>
-
-          </div>
-        </section>
+              </button>
+            </li>
+          </ol>
+        </div>
 
 
         <section class="gadjets container">
