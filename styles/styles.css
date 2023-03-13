@@ -3135,6 +3135,11 @@ background-color: #DCDCDC;
   margin: 0;
 }
 
+.button-number[type=number]{
+  -moz-appearance:textfield;
+}
+
+
 .button-modal-delivery {
   display: flex;
   position: relative;
