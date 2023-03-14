@@ -914,6 +914,7 @@ navigation-item-catalog:active .subcatalog {
   border: #08000000;
   margin-top: -86px;
   margin-bottom: 65px;
+  margin-right: -10px;
 }
 
 .slider-pagination-item{
