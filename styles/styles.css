@@ -2947,6 +2947,16 @@ background-color: #DCDCDC;
   right: 50px;
 }
 
+.input-error {
+  outline: 2px solid #FF3D3D;
+}
+
+.user-error {
+  display: none;
+  font-size: 14px;
+  color: #FF3D3D;
+}
+
 .user{
   display: flex;
   flex-wrap: wrap;
@@ -2957,9 +2967,10 @@ background-color: #DCDCDC;
   padding-right: 45px;
   width: 360px;
   margin-right: 40px;
-  margin-bottom: 42px;
   background-color: #F0F0F0;
   border: none;
+  display: block;
+  outline: none;
 }
 
 .user-content-svg svg{
@@ -2973,6 +2984,10 @@ background-color: #DCDCDC;
 
 .user-content-svg{
   position: relative;
+}
+
+.user-content{
+  margin-bottom: 42px;
 }
 
 .user-content span{
@@ -2995,14 +3010,6 @@ background-color: #DCDCDC;
 .user-name::placeholder {
   color: #AF4FFF;
 }
-
-.user-name-error {
-  outline: 2px solid red;
-  display: none;
-  font-size: 14px;
-  color: #FF3D3D;
-}
-
 
 .user-name-input:disabled {
   opacity: 30%;
@@ -3027,6 +3034,7 @@ background-color: #DCDCDC;
   background-image: url("../images/main/svg/message.svg");
   background-repeat: no-repeat;
   background-position: 94% 50%;
+  outline: none;
 }
 
 .user-mail-input:hover {
@@ -3061,13 +3069,6 @@ background-color: #DCDCDC;
   outline: 2px solid #AF4FFF;
 }
 
-.user-delivery-error:invalid {
-  outline: 2px solid red;
-  display: none;
-  font-size: 14px;
-  color: #FF3D3D;
-}
-
 .user-delivery-input:disabled {
   opacity: 30%;
 }
@@ -3075,10 +3076,14 @@ background-color: #DCDCDC;
 .user-delivery-input{
   padding: 20px;
   width: 540px;
-  margin-bottom: 42px;
   margin-right: 40px;
   background-color: #F0F0F0;
   border: none;
+  outline: none;
+}
+
+.user-mail{
+  color: #000000;
 }
 
 .user-title-all{
@@ -3157,12 +3162,14 @@ background-color: #DCDCDC;
   border: none;
 }
 
-.user-all{
-  display: flex;
+
+.user-all-button-error {
+  outline: 2px solid #FF3D3D;
 }
 
 .user-all-button {
   display: flex;
+  outline:none;
 }
 
 
