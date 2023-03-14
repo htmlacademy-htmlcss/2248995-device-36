@@ -2334,7 +2334,7 @@ navigation-item-catalog:active .subcatalog {
   background-image: url("../images/main/svg/control-checked.svg");
   content: "";
   top:3px;
-  left:5px;
+  left:2px;
 }
 
 .control-mark-bluetooth {
@@ -2388,8 +2388,8 @@ navigation-item-catalog:active .subcatalog {
   height: 8px;
   background-color: #000000;
   content:"";
-  top: 6px;
-  left: 6px;
+  top: 5px;
+  left: 5px;
   border-radius: 50%;
 }
 
