@@ -119,6 +119,7 @@
                     <li class="subcatalog-item">
                       <a class="subcatalog-link" href="#">Квадрокоптеры</a>
                     </li>
+                    <li class="subcatalog-item">
                   </ul>
                 </div>
               </div>
@@ -147,8 +148,8 @@
           <li class="breadcrumbs-item breadcrumbs-catalog">
             <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link " href="#">Моноподы для селфи</a>
+          <li class="breadcrumbs-item breadcrumbs-catalog">
+            <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
           </li>
         </ul>
       </div>
@@ -170,12 +171,10 @@
                     </div>
                   </div>
                   <div class="range-wraper-inputs">
-                    <label class="catalog-filter-label">
-                    От<input class="range-input min" type="number" value="0" name="min-price">
-                    </label>
-                    <label class="catalog-filter-label">
-                    До<input class="range-input" type="number" value="5000" name="max-price">
-                    </label>
+                    От<input class="range-input min" type="number" value="0" min="1" name="min-price" id="min-price">
+                    <label class="catalog-filter-label-min" for="min-price"></label>
+                    До<input class="range-input" type="number" value="5000" name="max-price" id="max-price">
+                    <label class="catalog-filter-label-max" for="max-price"></label>
                   </div>
                 </div>
               </fieldset>
