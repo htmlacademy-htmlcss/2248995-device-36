@@ -912,14 +912,12 @@ navigation-item-catalog:active .subcatalog {
   padding: 0;
   margin: 0;
   border: #08000000;
-  z-index: 1;
   margin-top: -86px;
   margin-bottom: 65px;
 }
 
 .slider-pagination-item{
   display: flex;
-  justify-self:center;
 }
 
 .slider-pagination-link {
@@ -943,7 +941,7 @@ navigation-item-catalog:active .subcatalog {
   height: 10px;
   top: 3px;
   right: 3px;
-  border: 2px solid #000;
+  border: 2px solid #000000;
 }
 
 .slider-pagination-link:active {
