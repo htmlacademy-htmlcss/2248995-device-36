@@ -529,7 +529,6 @@
       </div>
     </footer>
 
-
     <div class="modal-container modal-container-close">
       <div class="form-user-delivery">
         <button class="modal-close-button">
@@ -540,47 +539,49 @@
           <form action="https://echo.htmlacademy.ru/courses" method="post">
             <div class="user">
               <div class="user-content user-content-svg">
-                <label  class="user-name" for="user-name">Ваше имя:</label>
-                <input class="user-name-input" type="text" name="" id="user-name" placeholder="Введите имя" required>
-                <span class="user-name-error visually-hidden">Забавное у вас имя</span>
+                <label class="user-name" for="user-name">Ваше имя:</label>
+                <input class="user-name-input input-error" class="input-form-delivery" type="text" name="" id="user-name"
+                  placeholder="Введите имя" required>
+                <span class="user-mail user-error">Забавное у вас имя</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12">
-                  <path  d="M0 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6
-                      1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0A3.5 3.5 0 0 0 3 3.5c0 1.3.7
-                      2.4 1.7 3A6.3 6.3 0 0 0 0 12Z"/>
+                  <path d="M0 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6
+                              1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0A3.5 3.5 0 0 0 3 3.5c0 1.3.7
+                              2.4 1.7 3A6.3 6.3 0 0 0 0 12Z" />
                 </svg>
               </div>
               <div class="user-content">
                 <label class="user-name" for="user-e-mail">Ваш e-mail:</label>
-                <input class="user-mail-input" type="email" id="user-e-mail" placeholder="почта" required> <br>
-                <span class="user-mail-error visually-hidden">Забавный у вас адрес</span>
+                <input class="user-mail-input input-error" type="email" id="user-e-mail" placeholder="почта" required> <br>
+                <span class="user-mail user-error">Забавный у вас адрес</span>
               </div>
               <div class="user-content">
                 <label class="user-delivery" for="user-delivery">Что нужно привезти:</label>
-                <input class="user-delivery-input" type="text" id="user-delivery" placeholder="В свободной форме" required >
+                <input class="user-delivery-input input-error" type="text" id="user-delivery" placeholder="В свободной форме" required>
               </div>
               <div class="user-content-all">
                 <span class="user-title-all">Колличество:</span>
                 <button class="popover-user-delivery">
                   <p class="popover-user-delivery-more">
-                      Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
-                      к провозу багажа.
+                    Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                    к провозу багажа.
                   </p>
                 </button>
-                <div class="user-all">
+                <div class="user-all-button user-all-button-error">
                   <button class="button-minus" type="button" value="-"></button>
                   <label>
-                    <input class="button-number" type="number" min="1" max="99" set="1" value="1" required>
+                    <input class="button-number" type="number" value="1" required>
                   </label>
                   <button class="button-plus" type="button" value="+"></button>
                 </div>
               </div>
             </div>
             <span>
-            <button class="button-modal-delivery" type="button">Отправить</button>
+              <button class="button-modal-delivery" type="submit">Отправить</button>
             </span>
           </form>
         </section>
       </div>
     </div>
-  </body>
-</html>
+    </body>
+
+    </html>
