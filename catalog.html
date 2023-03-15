@@ -21,37 +21,18 @@
         <div class="form-navigation">
           <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="get">
             <div class="search">
-              <span class="no-visually">Поиск по сайту</span>
-              <input class="search-input" autocomplete="off" type="text" required placeholder="Текст поиска">
+              <Label for="search" class="no-visually">Поиск по сайту</label>
+              <input class="search-input" autocomplete="off" type="text" required placeholder="Текст поиска" id="search">
               <span></span>
             </div>
             <div class="button-search">
               <button class="search-submit" type="submit" value="Найти">Найти</button>
-              <span></span>
             </div>
           </form>
-          <div class="navigation-user">
-            <span class="navigation-list navigation-item-login no-visually">
-              <a class="login" href="#">
-                <svg width="13" height="12" fill="none">
-                  <path fill="black" d="M0 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6
-                                1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0A3.5 3.5 0 0 0 3 3.5c0 1.3.7
-                                2.4 1.7 3A6.3 6.3 0 0 0 0 12Z" />
-                </svg>Войти
-              </a>
-            </span>
-            <span class="navigation-item navigation-list">
-              <a class="navigation-link navigation-link-header login-user" href="#">
-                <svg width="13" height="12" fill="none">
-                  <path fill="black" d="M0 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6
-                                                    1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0A3.5 3.5 0 0 0 3 3.5c0 1.3.7
-                                                    2.4 1.7 3A6.3 6.3 0 0 0 0 12Z" />
-                </svg>Коля Петухов
-              </a>
-            </span>
-          <span class="navigation-item navigation-list">
+          <div class="navigation-user navigation-item-login navigation-list">
+            <a class=" navigation-link navigation-link-header no-visually login" href="#">Войти</a>
+            <a class="navigation-link navigation-link-header login-user" href="#">Коля Петухов</a>
             <a class="navigation-link login-go navigation-link-header" href="#">Выйти</a>
-          </span>
           </div>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -62,31 +43,31 @@
               <a class="navigation-link basket navigation-link-header" href="#">Корзина</a>
               <div class="popover-basket">
                 <div class="popover-content">
-                  <ol class="produkt-basket">
-                    <li class="produkt-basket-item">
-                      <a class="produkt-basket-link" href="#">
-                        <img src="images/header/produkt-1-small.png" alt="Любительская селфи-палка." width="39" height="43">
-                        <span class="produkt-basket-title">Любительская <br> селфи-палка</span>
+                  <ol class="product-basket">
+                    <li class="product-basket-item">
+                      <a class="product-basket-link" href="#">
+                        <img src="images/header/product-1-small.png" alt="Любительская селфи-палка." width="39" height="43">
+                        <span class="product-basket-title">Любительская <br> селфи-палка</span>
                       </a>
-                        <button class="delete-produkt-up">
+                        <button class="delete-product-up">
                         <span class="visually-hidden">Удалить товар</span>
                       </button>
                     </li>
-                    <li class="produkt-basket-item">
-                      <a class="produkt-basket-link" href="#">
-                        <img src="images/header/produkt-2-small.png" alt="Профессиональная селфи-палка." width="39" height="43">
-                        <span class="produkt-basket-title">Профессиональная <br> селфи-палка</span>
+                    <li class="product-basket-item">
+                      <a class="product-basket-link" href="#">
+                        <img src="images/header/product-2-small.png" alt="Профессиональная селфи-палка." width="39" height="43">
+                        <span class="product-basket-title">Профессиональная <br> селфи-палка</span>
                       </a>
-                        <button class="delete-produkt">
+                        <button class="delete-product">
                         <span class="visually-hidden">Удалить товар</span>
                       </button>
                     </li>
                   </ol>
-                  <div class="produkt-all-basket">
-                    <span class="produkt-basket-title">Товаров: 2</span>
-                    <span class="produkt-basket-title">Сумма: 2000P</span>
+                  <div class="product-all-basket">
+                    <span class="product-basket-title basket-title-product">Товаров: 2</span>
+                    <span class="product-basket-title">Сумма: 2000P</span>
                   </div>
-                  <button class="open-basket" type="button">Открыть корзину</button>
+                  <a class="open-basket">Открыть корзину</a>
                 </div>
               </div>
             </li>
@@ -159,8 +140,8 @@
       </div>
 
 
-      <section class="produkt-card-filter">
-        <h3>Каталог с фильтрами</h3>
+      <section class="product-card-filter">
+        <h3 class="visually-hidden">Каталог с фильтрами</h3>
         <div class="catalog-filter-container">
           <div class="filter-container">
             <h4 class=" link filter-subtitle">Фильтр:</h4>
@@ -247,7 +228,7 @@
             </form>
           </div>
 
-          <div class="produkt-card-container">
+          <div class="product-card-container">
             <div class="popular-container">
               <h3 class="filter filter-pupular">Сортировка:</h3>
 
@@ -263,53 +244,51 @@
                 <span class="visually-hidden min-pupular">Менее популярные</span>
               </button>
             </div>
-            <ul class="produkt-card-group">
-              <li class="produkt-card new">
-                <a class="navigation-link produkt-card-link" href="#">
-                  <img class="produkt" src="images/main/jpg/produkt-2.jpg" width="360" height="380"
+            <ul class="product-card-group">
+              <li class="product-card new">
+                <a class="navigation-link product-card-link" href="#">
+                  <img class="product" src="images/main/jpg/product-2.jpg" width="360" height="380"
                     alt="Любительская селфи-палка.">
-                  <h3 class="produkt-card-title">Любительская <br> селфи-палка</h3>
-                  <b class="produkt-card-price">500 P</b>
+                  <h3 class="product-card-title">Любительская <br> селфи-палка</h3>
+                  <b class="product-card-price">500 P</b>
                   <span class="more">Подробнее</span>
                 </a>
               </li>
-              <li class="produkt-card new">
-                <a class="navigation-link produkt-card-link" href="#">
-                  <img class="produkt" src="images/main/jpg/produkt-2-1.jpg" width="360" height="380"
+              <li class="product-card new">
+                <a class="navigation-link product-card-link" href="#">
+                  <img class="product" src="images/main/jpg/product-2-1.jpg" width="360" height="380"
                     alt="Профессиональная селфи-палка.">
-                  <h3 class="produkt-card-title">Профессиональная <br> селфи-палка</h3>
-                  <b class="produkt-card-price">1 500 P</b>
+                  <h3 class="product-card-title">Профессиональная <br> селфи-палка</h3>
+                  <b class="product-card-price">1 500 P</b>
                   <span class="more">
                     Подробнее
                   </span>
                 </a>
               </li>
-              <li class="produkt-card new">
-                <a class="navigation-link produkt-card-link" href="#">
-                  <img class="produkt" src="images/main/jpg/produkt-2-2.jpg" width="360" height="380"
+              <li class="product-card new">
+                <a class="navigation-link product-card-link" href="#">
+                  <img class="product" src="images/main/jpg/product-2-2.jpg" width="360" height="380"
                     alt="Непотопляемая селфи-палка.">
-                  <h3 class="produkt-card-title">Непотопляемая <br> селфи-палка</h3>
-                  <b class="produkt-card-price">2 500 P</b>
+                  <h3 class="product-card-title">Непотопляемая <br> селфи-палка</h3>
+                  <b class="product-card-price">2 500 P</b>
                   <span class="more">
                     Подробнее
                   </span>
                 </a>
               </li>
-              <li class="produkt-card new">
-                <a class="navigation-link produkt-card-link" href="#">
-                  <img class="produkt" src="images/main/jpg/produkt-2-3.jpg" width="360" height="380"
+              <li class="product-card new">
+                <a class="navigation-link product-card-link" href="#">
+                  <img class="product" src="images/main/jpg/product-2-3.jpg" width="360" height="380"
                     alt="Селфи-палка «Следуй за мной».">
-                  <h3 class="produkt-card-title">Селфи-палка «Следуй <br> за мной»</h3>
-                  <b class="produkt-card-price">1 500 P</b>
+                  <h3 class="product-card-title">Селфи-палка «Следуй <br> за мной»</h3>
+                  <b class="product-card-price">1 500 P</b>
                   <span class="more">
                     Подробнее
                   </span>
                 </a>
               </li>
             </ul>
-            <div class="load">
-              <button class="navigation-link navigation-link-load link">Загрузить ещё</button>
-            </div>
+              <button class="navigation-link navigation-link-load load link">Загрузить ещё</button>
               <div class="pages">
               <a class="navigation-link pagination-link link link-button no-active" href="#">Назад
                 <span class="visually-hidden">Предыдущая страница</span>
