@@ -19,32 +19,18 @@
         <div class="form-navigation">
           <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="get">
             <div class="search">
-              <span class="no-visually">Поиск по сайту</span>
-              <input class="search-input" autocomplete="off" type="text" required placeholder="Поиск по сайту">
+              <Label for="search" class="no-visually">Поиск по сайту</label>
+              <input class="search-input" autocomplete="off" type="text" required placeholder="Текст поиска" id="search">
               <span></span>
             </div>
             <div class="button-search">
               <button class="search-submit" type="submit" value="Найти">Найти</button>
-              <span></span>
             </div>
           </form>
-          <div class=" navigation-user">
-            <span class="navigation-list navigation-item-login">
-              <a class="navigation-link navigation-link-header login" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" fill="none">
-                  <path fill="black"
-                    d="M0 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6
-                    1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0A3.5 3.5 0 0 0 3 3.5c0 1.3.7
-                    2.4 1.7 3A6.3 6.3 0 0 0 0 12Z" />
-                </svg>Войти
-              </a>
-            </span>
-            <span class="navigation-item navigation-list no-visually">
-              <a class="navigation-link login-user" href="#">Коля Петухов</a>
-            </span>
-            <span class="navigation-item navigation-list no-visually">
-              <a class="navigation-link navigation-link-header login-go" href="#">Выйти</a>
-            </span>
+          <div class="navigation-user navigation-item-login navigation-list">
+            <a class="navigation-link navigation-link-header login" href="#">Войти</a>
+            <a class="navigation-link navigation-list no-visually login-user" href="#">Коля Петухов</a>
+            <a class="navigation-link navigation-link-header navigation-list no-visually login-go" href="#">Выйти</a>
           </div>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -54,31 +40,31 @@
               <a class="navigation-link navigation-link-header basket" href="#">Корзина</a>
               <div class="popover-basket">
                 <div class="popover-content">
-                  <ol class="produkt-basket">
-                    <li class="produkt-basket-item ">
-                      <a class="produkt-basket-link" href="#">
-                        <img src="images/header/produkt-1-small.png" alt="Любительская селфи-палка." width="39" height="43">
-                        <p class="produkt-basket-title">Любительская <br> селфи-палка</p>
+                  <ol class="product-basket">
+                    <li class="product-basket-item ">
+                      <a class="product-basket-link" href="#">
+                        <img src="images/header/product-1-small.png" alt="Любительская селфи-палка." width="39" height="43">
+                        <p class="product-basket-title">Любительская <br> селфи-палка</p>
                       </a>
-                        <button class="delete-produkt-up">
+                        <button class="delete-product-up">
                         <span class="visually-hidden">Удалить товар</span>
                       </button>
                     </li>
-                    <li class="produkt-basket-item ">
-                      <a class="produkt-basket-link" href="#">
-                        <img src="images/header/produkt-2-small.png" alt="Профессиональная селфи-палка." width="39" height="43">
-                        <p class="produkt-basket-title">Профессиональная <br> селфи-палка</p>
+                    <li class="product-basket-item ">
+                      <a class="product-basket-link" href="#">
+                        <img src="images/header/product-2-small.png" alt="Профессиональная селфи-палка." width="39" height="43">
+                        <p class="product-basket-title">Профессиональная <br> селфи-палка</p>
                       </a>
-                      <button class="delete-produkt">
+                      <button class="delete-product">
                         <span class="visually-hidden">Удалить товар</span>
                       </button>
                     </li>
                   </ol>
-                  <div class="produkt-all-basket">
-                    <span class="produkt-basket-title">Товаров: 2</span>
-                    <span class="produkt-basket-title">Сумма: 2000P</span>
+                  <div class="product-all-basket">
+                    <span class="product-basket-title basket-title-product">Товаров: 2</span>
+                    <span class="product-basket-title">Сумма: 2000P</span>
                   </div>
-                  <button class="open-basket" type="submit" value="Открыть">Открыть корзину</button>
+                  <a class="open-basket">Открыть корзину</a>
                 </div>
               </div>
             </li>
@@ -143,7 +129,7 @@
             <button class="slider-button slider-next" type="button">
               <span class="visually-hidden">Кнопка вперед</span>
             </button>
-            <img class="slider-number" src="images/main/svg/01.svg" width="250" height="135" alt="Слайдер номер 01.">
+            <img class="slider-number" src="images/main/svg/slider-number-kvadracopter.svg" width="250" height="135" alt="Слайдер номер 01.">
           </div>
           <div class="slogan-conteiner">
             <p class="slogan">Порхает как бабочка, жалит как пчела!</p>
@@ -170,7 +156,7 @@
             <button class="slider-button slider-next" type="button">
               <span class="visually-hidden ">Кнопка вперед</span>
             </button>
-            <img class="slider-number" src="images/main/svg/02.svg" width="250" height="135" alt="Слайдер номер 02.">
+            <img class="slider-number" src="images/main/svg/slider-number-fitnes.svg" width="250" height="135" alt="Слайдер номер 02.">
           </div>
           <div class="slogan-conteiner">
             <p class="slogan">Худеем правильно!</p>
@@ -194,7 +180,7 @@
             <button class="slider-button slider-next" type="button">
               <span class="visually-hidden ">Кнопка вперед</span>
             </button>
-            <img class="slider-number" src="images/main/svg/03.svg" width="250" height="135" alt="Слайдер номер 03.">
+            <img class="slider-number" src="images/main/svg/slider-number-monopad.svg" width="250" height="135" alt="Слайдер номер 03.">
           </div>
           <div class="slogan-conteiner">
             <p class="slogan">Делай селфи,как Бен Стиллер!</p>
@@ -346,7 +332,7 @@
             <li class="navigation-item subject">СДИК</li>
             <li class="navigation-item subject">ТоксБерри</li>
           </ul>
-          <button type="button" class="navigation-link link about-us">Подробнее о нас</button>
+          <a class="navigation-link link about-us">Подробнее о нас</a>
         </section>
         <section class="contacts">
           <h2 class="subtitle subtitle-contacts">Контакты</h2>
@@ -533,7 +519,7 @@
                   </span>
                 </button>
                 <div class="user-all-button user-all-button-error">
-                  <button class="button-minus" type="button" value="-"></button>
+                  <button class="button-minus" type="button"></button>
                   <label>
                     <input class="button-number" type="number" value="1" required>
                   </label>
