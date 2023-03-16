@@ -45,7 +45,7 @@
                         <img src="images/header/product-1-small.png" alt="Любительская селфи-палка." width="39" height="43">
                         <p class="product-basket-title">Любительская <br> селфи-палка</p>
                       </a>
-                        <button class="delete-product-up">
+                        <button class="delete-product-up" type="button">
                         <span class="visually-hidden">Удалить товар</span>
                       </button>
                     </li>
@@ -54,7 +54,7 @@
                         <img src="images/header/product-2-small.png" alt="Профессиональная селфи-палка." width="39" height="43">
                         <p class="product-basket-title">Профессиональная <br> селфи-палка</p>
                       </a>
-                      <button class="delete-product">
+                      <button class="delete-product" type="button">
                         <span class="visually-hidden">Удалить товар</span>
                       </button>
                     </li>
@@ -63,7 +63,7 @@
                     <span class="product-basket-title basket-title-product">Товаров: 2</span>
                     <span class="product-basket-title">Сумма: 2000P</span>
                   </div>
-                  <a class="open-basket">Открыть корзину</a>
+                  <a class="open-basket" href="#">Открыть корзину</a>
                 </div>
               </div>
             </li>
@@ -278,7 +278,7 @@
         </div>
       </section>
       <div class="container-delivery">
-        <a class="navigation-link navigation-link-rare" href="">
+        <a class="navigation-link navigation-link-rare" href="#">
           <span class="link rare">Доставим редкий товар под заказ</span>
         </a>
       </div>
@@ -328,9 +328,10 @@
               распаковками, а также акции, спецпредложения и вот это вот всё.
             </p>
           </div>
-          <form class="form-subscription" action="https://echo.htmlacademy.ru/courses" method="post">
+          <form class="form-subscription" action="https://echo.htmlacademy.ru/courses" method="get">
             <label for="newsletter-email"></label>
-            <input class="user-email" type="email" placeholder="Ваш e-mail" required id="newsletter-email">
+            <input class="user-email" type="email" placeholder="Ваш e-mail"
+              autocomplete="off" required id="newsletter-email">
             <button class="submit link" type="submit">Подписаться</button>
             <span class="ok">Это бесплатно</span>
           </form>
@@ -449,7 +450,7 @@
     <div class="modal-container modal-container-close">
       <h2 class="visually-hidden">Модальное окно для заказа товара</h2>
       <div class="form-user-delivery">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="user-content-container">
@@ -459,7 +460,7 @@
               <div class="user-content user-content-svg">
                 <label class="user-name" for="user-name">Ваше имя:</label>
                 <input class="user-name-input input-error" type="text" id="user-name"
-                  placeholder="Введите имя" required>
+                  placeholder="Введите имя" autocomplete="off" required>
                 <span class="user-mail user-error">Забавное у вас имя</span>
                 <svg width="13" height="12">
                   <path d="M0 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6
@@ -469,17 +470,18 @@
               </div>
               <div class="user-content">
                 <label class="user-name" for="user-e-mail">Ваш e-mail:</label>
-                <input class="user-mail-input input-error" type="email" id="user-e-mail" placeholder="почта" required> <br>
+                <input class="user-mail-input input-error" type="email" id="user-e-mail"
+                  placeholder="почта" autocomplete="off" required> <br>
                 <span class="user-mail user-error">Забавный у вас адрес</span>
               </div>
               <div class="user-content">
                 <label class="user-delivery" for="user-delivery">Что нужно привезти:</label>
                 <input class="user-delivery-input input-error" type="text" id="user-delivery"
-                  placeholder="В свободной форме" required>
+                  placeholder="В свободной форме" autocomplete="off" required>
               </div>
               <div class="user-content-all">
                 <span class="user-title-all">Колличество:</span>
-                <button class="popover-user-delivery">
+                <button class="popover-user-delivery" type="button">
                   <span class="popover-user-delivery-more">
                     Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
                     к провозу багажа.
@@ -490,7 +492,7 @@
                   <label>
                     <input class="button-number" type="number" value="1" required>
                   </label>
-                  <button class="button-plus" type="button" value="+"></button>
+                  <button class="button-plus" type="button"></button>
                 </div>
               </div>
             </div>
