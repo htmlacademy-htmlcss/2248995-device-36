@@ -2522,22 +2522,6 @@ navigation-item-catalog:active .subcatalog {
   position: relative;
 }
 
-.select:hover {
-  opacity: 60%;
-}
-
-.select:active {
-  opacity: 30%;
-}
-
-.select:focus-visible {
-  outline: 2px solid #AF4FFF;
-}
-
-.select-control:disabled {
-  opacity: 10%;
-}
-
 .select-control {
   border: none;
   background-color: #f0f0f0;
@@ -2551,6 +2535,23 @@ navigation-item-catalog:active .subcatalog {
   background-position: 93% 53%;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
+  outline: none
+}
+
+.select:hover {
+  opacity: 60%;
+}
+
+.select:active {
+  opacity: 30%;
+}
+
+.select-control:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.select-control:disabled {
+  opacity: 10%;
 }
 
 .button-popular-max {
