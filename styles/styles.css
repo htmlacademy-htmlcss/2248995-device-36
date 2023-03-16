@@ -2872,7 +2872,7 @@ background-color: #DCDCDC;
 }
 
 .modal-container-close {
-  display: none;
+  display: non;
 }
 
 .modal-container {
@@ -3014,6 +3014,7 @@ background-color: #DCDCDC;
 
 .user-name-input:focus-visible {
   outline: 2px solid #AF4FFF;
+  background-color:rgba(240, 240, 240, 1);
 }
 
 .user-name::placeholder {
