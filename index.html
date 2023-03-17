@@ -19,7 +19,7 @@
           <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="get">
             <div class="search">
               <Label for="search" class="no-visually">Поиск по сайту</label>
-              <input class="search-input" autocomplete="off" type="text" required placeholder="Поиск по сайту" id="search">
+              <input class="search-input" name="search" autocomplete="off" type="text" required placeholder="Поиск по сайту" id="search">
               <span></span>
             </div>
             <div class="button-search">
@@ -330,9 +330,9 @@
             </p>
           </div>
           <form class="form-subscription" action="https://echo.htmlacademy.ru/courses" method="get">
-            <label for="newsletter-email">
-              <input class="user-email" type="email"  name="email" placeholder="Ваш e-mail" autocomplete="off" required id="newsletter-email">
-            </label>
+            <label for="newsletter-email"></label>
+            <input class="user-email" type="email" name="email" placeholder="Ваш e-mail" autocomplete="off" required
+              id="newsletter-email">
             <button class="submit link" type="submit">Подписаться</button>
             <span class="ok">Это бесплатно</span>
           </form>
@@ -460,7 +460,7 @@
             <div class="user">
               <div class="user-content user-content-svg">
                 <label class="user-name" for="user-name">Ваше имя:</label>
-                <input class="user-name-input input-error" type="text" id="user-name"
+                <input class="user-name-input input-error" name="user-name" type="text" id="user-name"
                   placeholder="Введите имя" autocomplete="off" required>
                 <span class="user-mail user-error visually-hidden">Забавное у вас имя</span>
                 <svg width="13" height="12">
@@ -471,13 +471,13 @@
               </div>
               <div class="user-content">
                 <label class="user-name" for="user-e-mail">Ваш e-mail:</label>
-                <input class="user-mail-input input-error" type="email" id="user-e-mail"
+                <input class="user-mail-input input-error" name="user-e-mail" type="email" id="user-e-mail"
                   placeholder="почта" autocomplete="off" required> <br>
                 <span class="user-mail user-error">Забавный у вас адрес</span>
               </div>
               <div class="user-content">
                 <label class="user-delivery" for="user-delivery">Что нужно привезти:</label>
-                <input class="user-delivery-input input-error" type="text" id="user-delivery"
+                <input class="user-delivery-input  name="user-delivery" input-error" type="text" id="user-delivery"
                   placeholder="В свободной форме" autocomplete="off" required>
               </div>
               <div class="user-content-all">
