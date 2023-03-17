@@ -672,6 +672,9 @@ navigation-item-catalog:active .subcatalog {
   border: 2px solid rgba(0, 0, 0, 0);
 }
 
+.subcatalog-item .subcatalog-link {
+  display: inline-block;
+}
 
 .subcatalog-link {
   text-decoration: none;
@@ -1459,6 +1462,7 @@ navigation-item-catalog:active .subcatalog {
   top: -48px;
   margin-bottom: 40px;
 }
+
 
 .company {
   padding: 0;
@@ -2873,7 +2877,7 @@ background-color: #DCDCDC;
 }
 
 .modal-container-close {
-  display: none;
+  display: non;
 }
 
 .modal-container {
@@ -2897,10 +2901,10 @@ background-color: #DCDCDC;
   position: absolute;
   background-color: #FFFFFF;
   width: 760px;
-  padding-top: 52px;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-bottom: 72px;
+  padding-top: 62px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 62px;
   outline: 10px solid #000000;
   left: 50%;
   top: 50%;
@@ -2908,11 +2912,10 @@ background-color: #DCDCDC;
   z-index: 1;
 }
 
-
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 67px;
+  top: 74px;
   right: 70px;
   width: 26px;
   height: 26px;
@@ -2997,7 +3000,7 @@ background-color: #DCDCDC;
 }
 
 .user-content {
-  margin-bottom: 42px;
+  margin-bottom: 37px;
 }
 
 .user-content-svg {
@@ -3008,6 +3011,7 @@ background-color: #DCDCDC;
 .user-content span {
   display: flex;
   font-size: 14px;
+  line-height: 20px;
 }
 
 .user-name-input:hover {
@@ -3035,8 +3039,7 @@ background-color: #DCDCDC;
 .user-delivery,
 .user-title-all {
   font-weight: 700;
-  letter-spacing: 20%;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
   display: block;
 }
 
@@ -3104,12 +3107,17 @@ background-color: #DCDCDC;
   background-color: #F0F0F0;
   border: none;
   outline: none;
-  padding-top: 22px;
-  padding-bottom: 23px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-weight: 400;
   font-family: "Rubik", sens-serif;
   font-size: 16px;
   line-height: 20px;
+}
+
+
+.user-content-delivery{
+  margin-bottom: 43px;
 }
 
 .user-mail {
@@ -3120,7 +3128,7 @@ background-color: #DCDCDC;
   position: relative;
   padding: 0;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 7px;
   padding-right: 12px;
   display: inline-block;
 }
@@ -3136,7 +3144,7 @@ background-color: #DCDCDC;
 }
 
 .popover-user-delivery {
-  width: 22px;
+  width: 17px;
   height: 22px;
   position: relative;
   margin-top: 2px;
@@ -3322,7 +3330,7 @@ background-color: #DCDCDC;
   text-transform: uppercase;
   border:none;
   background-color: #ffffff;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
 }
 
 .button-modal-delivery::before {
