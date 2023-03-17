@@ -830,9 +830,11 @@ navigation-item-catalog:active .subcatalog {
   display: flex;
 }
 
-.link-slogan:active {
+.link-slogan:active::before {
   background-color: #FFC700;
   width: 220px;
+  height: 100%;
+  top:0;
 }
 
 .link-slogan:focus-visible {
