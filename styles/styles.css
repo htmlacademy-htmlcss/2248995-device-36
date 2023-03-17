@@ -951,10 +951,9 @@ navigation-item-catalog:active .subcatalog {
   padding: 0;
   margin: 0;
   border: #08000000;
-  margin-top: -86px;
-  margin-bottom:65px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: -87px;
+  margin-bottom:71px;
+  margin-right: -21px;
 }
 
 .slider-pagination-item {
@@ -963,12 +962,12 @@ navigation-item-catalog:active .subcatalog {
 
 .slider-pagination-link {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   padding: 0;
   cursor: pointer;
   margin: 0;
-  margin-right: 12px;
+  margin-right: 17px;
   border: #000000;
   background-color: #ffffff;
 }
@@ -1756,7 +1755,7 @@ navigation-item-catalog:active .subcatalog {
   width: 1160px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 291px 449px 279px;
+  grid-template-columns: 285px 449px 285px;
   column-gap: 70px;
   row-gap: 28px;
   position: relative;
@@ -2621,7 +2620,7 @@ navigation-item-catalog:active .subcatalog {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 70px 40px 42px;
+  padding: 70px 40px 45px;
   gap: 40px;
 }
 
@@ -2741,7 +2740,7 @@ navigation-item-catalog:active .subcatalog {
   font-size: 16px;
   line-height: 19px;
   display: flex;
-  width: 755px;
+  width: 760px;
   height: 55px;
   align-items: center;
   justify-content: center;
@@ -2755,8 +2754,9 @@ navigation-item-catalog:active .subcatalog {
   margin-right: 40px;
   font-size: 16px;
   line-height: 19px;
-  margin-bottom: 42px;
+  margin-bottom: 46px;
   max-height: 55px;
+  padding-left: 10px;
 }
 
 .load:hover {
@@ -2877,7 +2877,7 @@ background-color: #DCDCDC;
 }
 
 .modal-container-close {
-  display: non;
+  display: none;
 }
 
 .modal-container {
