@@ -32,8 +32,8 @@
             <a class="navigation-link navigation-link-header navigation-list no-visually login-go" href="#">Выйти</a>
           </div>
           <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link navigation-link-header comparison" href="#">Сравнить</a>
+            <li class="navigation-item comparison">
+              <a class="navigation-link navigation-link-header" href="#">Сравнить</a>
             </li>
             <li class="navigation-item popover popover-open">
               <a class="navigation-link navigation-link-header basket" href="#">Корзина</a>
@@ -475,13 +475,13 @@
                   placeholder="почта" autocomplete="off" required> <br>
                 <span class="user-mail user-error">Забавный у вас адрес</span>
               </div>
-              <div class="user-content">
+              <div class="user-content user-content-delivery">
                 <label class="user-delivery" for="user-delivery">Что нужно привезти:</label>
-                <input class="user-delivery-input  name="user-delivery" input-error" type="text" id="user-delivery"
+                <input class="user-delivery-input input-error"  name="user-delivery" type="text" id="user-delivery"
                   placeholder="В свободной форме" autocomplete="off" required>
               </div>
               <div class="user-content-all">
-                <label class="user-title-all" for="button-number">Количество:</label>
+                <span class="user-title-all">Количество:</span>
                 <button class="popover-user-delivery" type="button">
                   <span class="popover-user-delivery-more user-error">
                     Постараемся найти, сколько нужно. Привезём сколько получится по требованиям <br>
@@ -490,7 +490,8 @@
                 </button>
                 <div class="user-all-button user-all-button-error">
                   <button class="button-minus" type="button"></button>
-                  <input class="button-number" type="number" value="1" required name="button-number" id="buttton-number">
+                  <label for="number"></label>
+                  <input class="button-number" type="number" value="1" required name="number" id="number">
                   <button class="button-plus" type="button"></button>
                 </div>
               </div>
