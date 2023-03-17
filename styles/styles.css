@@ -555,7 +555,6 @@ body {
 
 .link {
   letter-spacing: 0.2em;
-  height: 20px;
 }
 
 .page-navigation {
@@ -1754,7 +1753,7 @@ navigation-item-catalog:active .subcatalog {
   background-color: #444444;
   color: #ffffff;
   width: auto;
-  padding: 64px 140px 57px;
+  padding: 61px 140px 57px;
 }
 
 .footer-container {
