@@ -1752,7 +1752,7 @@ navigation-item-catalog:active .subcatalog {
   width: 1160px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 291px 440px 288px;
+  grid-template-columns: 291px 449px 279px;
   column-gap: 70px;
   row-gap: 28px;
   position: relative;
