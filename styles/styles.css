@@ -2990,7 +2990,7 @@ background-color: #DCDCDC;
 
 .user {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 
 .user-name-input {
@@ -3193,6 +3193,7 @@ background-color: #DCDCDC;
   text-align: start;
   display: none;
   font-size: 16px;
+  line-height: 20px;
 }
 
 .popover-user-delivery-more::before {
