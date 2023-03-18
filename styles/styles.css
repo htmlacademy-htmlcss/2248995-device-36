@@ -529,6 +529,7 @@ body {
   cursor: pointer;
   background-color: #ffffff;
   color: #000000;
+  text-decoration: none;
 }
 
 .open-basket:hover {
@@ -1998,6 +1999,8 @@ navigation-item-catalog:active .subcatalog {
   justify-self: end;
   margin-top: 4px;
 }
+
+
 
 .phone:hover {
   color: rgba(255, 199, 0, 1);
