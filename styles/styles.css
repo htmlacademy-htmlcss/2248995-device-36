@@ -263,7 +263,7 @@ body {
   margin-right: auto;
 }
 .navigation-list-user .navigation-item:not(:last-child){
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .login {
@@ -349,7 +349,7 @@ body {
   min-height: 30px;
   display: flex;
   align-items: center;
-  padding-left: 53px;
+  padding-left: 49px;
   padding-right: 6px;
   margin-right: -11px;
 }
@@ -366,7 +366,7 @@ body {
   position: absolute;
   top:4px;
   bottom: 10px;
-  left: 10px;
+  left: 4px;
 }
 
 .popover:active .popover-basket{
@@ -1761,7 +1761,7 @@ navigation-item-catalog:active .subcatalog {
   background-color: #444444;
   color: #ffffff;
   width: auto;
-  padding: 64px 140px 57px;
+  padding: 62px 140px 57px;
 }
 
 .footer-container {
