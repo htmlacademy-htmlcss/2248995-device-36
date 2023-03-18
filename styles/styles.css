@@ -2990,7 +2990,7 @@ background-color: #DCDCDC;
 
 .user {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 
 .user-name-input {
