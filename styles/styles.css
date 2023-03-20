@@ -1482,7 +1482,7 @@ navigation-item-catalog:active .subcatalog {
   text-decoration: none;
   font-family: "Rubik", sens-serif;
   font-weight: 700;
-  letter-spacing: -2%;
+  letter-spacing: 1px;
 }
 
 .contacts {
@@ -2990,7 +2990,7 @@ background-color: #DCDCDC;
 
 .user {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .user-name-input {
