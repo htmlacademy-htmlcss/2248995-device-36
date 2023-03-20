@@ -1068,7 +1068,7 @@ navigation-item-catalog:active .subcatalog {
   text-decoration: none;
   position: relative;
   display: block;
-  font-family: "Raleway", sans serif;
+  font-family: "Raleway", sans-serif;
   line-height: 24px;
   font-weight: 800;
   width: 160px;
@@ -1241,7 +1241,7 @@ navigation-item-catalog:active .subcatalog {
   max-width: 220px;
 }
 
-.link-active:activ::before {
+.link-active:active::before {
   padding-left: 65px;
 }
 
@@ -1386,7 +1386,7 @@ navigation-item-catalog:active .subcatalog {
   background-color: #F0F0F0;
   height: 99px;
   position: relative;
-  font-family: "Raleway", sans serif;
+  font-family: "Raleway", sans-serif;
   color: inherit;
   display: flex;
   align-items: center;
@@ -1482,7 +1482,7 @@ navigation-item-catalog:active .subcatalog {
   text-decoration: none;
   font-family: "Rubik", sens-serif;
   font-weight: 700;
-  letter-spacing: -2%;
+  letter-spacing: 1px;
 }
 
 .contacts {
@@ -1492,7 +1492,7 @@ navigation-item-catalog:active .subcatalog {
 }
 
 .navigation-item.subject {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   list-style: none;
@@ -2230,7 +2230,7 @@ navigation-item-catalog:active .subcatalog {
 }
 
 .min {
-  margin-right: -52 px;
+  margin-right: -52px;
 }
 
 .range-input {
@@ -2350,10 +2350,10 @@ navigation-item-catalog:active .subcatalog {
   position: absolute;
   width: 14px;
   height: 14px;
-  top:-2px;
-  left:0;
+  top: -2px;
+  left: 0;
   border: 3px solid #CCCCCC;
-  border-radius:3px;
+  border-radius: 3px;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
@@ -2990,7 +2990,7 @@ background-color: #DCDCDC;
 
 .user {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .user-name-input {
